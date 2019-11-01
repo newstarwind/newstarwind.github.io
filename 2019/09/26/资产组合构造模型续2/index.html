@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="">
+    
+    <meta name="keywords" content="美股,美国股票,美国股市,股市,股票,股票交易,美股投资,投资">
+    
+    <meta name="description" content="一起探讨理性投资美股的理念、时机和技巧，以及美股市场周期判断与分析。">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>资产组合构造模型 - 续2 胜舟策略 · 美股派</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href= "/assets/usparty.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >美股派</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">资产组合构造模型 - 续2 胜舟策略</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>美股派</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/images/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B/head.jpeg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            资产组合构造模型 - 续2 胜舟策略
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "量化研究">量化研究</a>
+    
+</div>
+                
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/09/26</span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>接续前文：</p>
+<a href="/2019/09/16/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B/" title="资产组合构造模型">资产组合构造模型</a><br>
+<a href="/2019/09/24/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD1/" title="资产组合构造模型 - 续1">资产组合构造模型 - 续1</a>
+
+<p>继续讨论。<a id="more"></a></p>
+<p>由于动量是价格运动的趋势，大家可以直觉地意识到动量策略的局限：</p>
+<ul>
+<li>价格趋势耗尽，出现了逆转；</li>
+<li>市场的趋势不明显，没有趋势可以跟进；</li>
+</ul>
+<p>一个普通的动量策略会好过买入持有策略，但代价是收益的肥尾效应更加明显。也就是说，在趋势逆转时动量组合可能出现大幅度收益下滑，而在市场趋势不明显的时候，动量策略会跑输均值回归策略。本质而言，动量策略是以肥尾为代价，获得更好的夏普率。<br></p>
+<img src="/images/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/p1.jpeg" class=""><br>
+
+<p>为了避免在两次再平衡过程中出现趋势的拐点，我们需要采用稍微密集的再平衡频率。权衡交易成本和风险控制，目前的模型使用的是2周一次的频率。</p>
+<p>没有一个模型是万能的。从大量统计来看，动量策略趋势确实提供了明显的风险溢价。一般而言，除了大盘疯涨的少数时候，动量策略都能跑赢大盘。在大盘崩溃的时候，动量策略大展身手，长期运行的夏普率也远高于大盘。</p>
+<p>一个潜在问题是，一个完整的动量策略含有资产选择、动量信号、回视周期、再平衡频率、持有时限以及风险控制等等多种参数。由于参数较多，容易陷入过拟合的误区中。这就是为什么前面我们选择多周期的 R 加权计算方法的原因。</p>
+<p>另外，季节性因素对再平衡的时间点有一定影响。根据历史数据，如果月平衡的话，选择月末的最后3个交易日是最好的，这样能提升0.2的夏普率。如果是周平衡的话，不要选择周五，周一收盘不错。这些季节性因素对几乎所有策略都有效。</p>
+<h2 id="风险控制"><a href="#风险控制" class="headerlink" title="风险控制"></a>风险控制</h2><p>止损是一种最为常见的控制风险的方式，但是，历史数据研究表明，止损对于以做多为主的交易策略，并不能带来明显的夏普率提升，而且还会损失一定的收益。另外，止损本身引入了新的变量，影响了模型的健壮性。</p>
+<p>在本策略中，我们通过控制波动率的办法代替止损。也就是说，通过控制整个组合的波动率，使得一个高度波动的风险资产自然而然地在组合中比例下降甚至消失，代之以低波动资产的配比逐渐升高。这个过程自动发生在每次资产再平衡的时候。</p>
+<p>在<strong>CLA</strong>的优化条件中，我们设定组合的总波动率不大于0.12。美股大盘SPX的波动率均值在0.15左右。这样，动量组合运行将比大盘更加平稳。</p>
+<p>改善波动性的另一方法，是在资产池中搭配互不相关甚至是负相关的资产。这些资产在某时期里各自涨落，或者你涨我跌，从而分散甚至抵消了风险。这是为什么资产组合要优于单项资产的原因。</p>
+<p>动量策略并没有大幅度改善回报率，而是改善了回报的波动率以及回撤。</p>
+<p>降低波动性本身，已经是很大的福利了。我们以一个简单的例子说明：</p>
+<ul>
+<li>A策略，每年回报80%，但是每三年中有一年可能亏损80%；</li>
+<li>B策略，每年回报10%，但是每三年中有一年可能亏损10%；</li>
+</ul>
+<p>以6年为期，你选择那一种策略？</p>
+<ul>
+<li>如果选择A策略，你的最终亏58%；</li>
+<li>如果选择B策略，你的最终赚18%。</li>
+<li>如果时间再长，A策略可能让你赔光。</li>
+</ul>
+<p>现在你应该明白，曾经有过的许多明星基金经理后来为啥销声匿迹的原因了吧。</p>
+<p>有故事的投资者可能有过这样的经历：由于巨大的波动性和回撤，在最坏的时刻他们不得不放弃了在执行中的计划，从此郁郁寡欢。</p>
+<p>在真实世界中，管理风险比追求回报更重要。</p>
+<img src="/images/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/p2.jpeg" class=""><br>
+
+<h2 id="资产的选择"><a href="#资产的选择" class="headerlink" title="资产的选择"></a>资产的选择</h2><p>资产的选择，是本策略最灵性的一部分。</p>
+<p>资产的选择，首选需要考虑分散其相关性。比如在前文<a href="/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/" title="赚美国人的钱">赚美国人的钱</a>中达里奥说的投资圣杯，如果我们能够找到几个成长良好而且彼此相关性不大的资产，则已经成功了一半。由于负相关性，股票大盘和债券这一对组合是我们首先想到。</p>
+<p>其次，我们需要选择低波动成长性资产。低波动是一个神奇的因子，它既能跑赢大盘又风险小，这种好事情我们后面慢慢聊。另外，选择低波动资产还有一个现实的原因。因为在CLA中我们限定了组合的波动率，所以如果我们选择了高波动资产，则它们会挤占波动率预算，导致其余的仓位不得不填充债券现金等等低成长低波动资产，从而影响整个组合的收益。</p>
+<img src="/images/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/p3.jpeg" class=""><br>
+
+<p>低波动资产的选择需要大开思路，考虑行业的本质以及美国的竞争优势所在，在美股中可选项还是比较多的。</p>
+<p>再次，我们需要放入至少一种避险资产。能够做空的策略在大盘崩溃时可以通过做空获利，由于我们不能做空，需要格外慎重。我们应该在组合中至少包含有一种资产，它们在大盘不妙时容纳大部分资金，可选项有现金、短期国债、贵金属等等。当大盘崩溃如2008年，几乎所有资产全军尽墨的时刻，这种资产是最后的避难所。本策略中我们选择类似现金但收益稍好的短期国债作为避险资产。</p>
+<p>最后，如果有某种资产在某段时间气势如虹，涨得又快又平稳，这样的奔牛如能抓住岂不美哉？这是我们要选择的回报驱动资产。</p>
+<p>美股这10年来牛市的主要驱动是技术股。平时技术股波动性大，不会占据主要仓位，但是如果有一段时间，比如2017年，技术股长得快还平稳，此时它们应该在组合中占有一席之地，贡献优质的回报。考虑到AI与5G，以及美国对技术霸权的维护等因素，我认为未来几年技术股还是美股的主要驱动，所以技术股不能少。</p>
+<img src="/images/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/p4.jpeg" class=""><br>
+
+<p>为了保证健壮性，躲避可能的爆雷，所有资产的选择以ETF为主，尽量避免个股。</p>
+<p>资产池的研究和更新是一个长期例行的工作。每隔几个月，我们都需要按照既有标准，重新审查过滤候选资产，将最合适的更新到资产池中。</p>
+<p>好了，经过上面这么多介绍，本策略的细节逐渐生动起来。它集动量、均方差优化和低波动三派武功于一身，形象已经呼之欲出了。我们可以叫它动量低波动均方差优化做多策略，但是这个名称累赘而无趣。从现在开始，我们称之为：</p>
+<center><table><tr><td bgcolor="#C0FF3E"><font size="3" color="#000000">胜舟策略</font><br /> </td></tr></table></center>
+
+<p>在股海波涛中胜利行舟，渡人渡己。</p>
+<p>下一篇，我们将看一看胜舟策略的测试结果。<br><br><br><br></p>
+
+    </article>
+    <!-- license  -->
+    
+    <div class="license-wrapper">
+        <!--hide at 20191101-->
+        <!-- <p>Author：<a href="http://yoursite.com"></a> -->
+        <!-- <p>原文链接：<a href="http://yoursite.com/2019/09/26/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/">http://yoursite.com/2019/09/26/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/</a> -->
+        <!-- <p>发表日期：<a href="http://yoursite.com/2019/09/26/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/">September 26th 2019, 10:27:25 am</a> -->
+        <!-- <p>更新日期：<a href="http://yoursite.com/2019/09/26/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/">November 1st 2019, 3:45:57 pm</a> -->
+        <p>版权声明：本文采用<a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">非商业性许可协议</a>。转载请注明来源<a href="https://usstock.site" target="_blank" rel="noopener">美股派</a> !</p>
+    </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+            <div class="nextSlogan">Next Post</div>
+            <a href="/2019/09/30/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C/" title="资产组合构造模型 - 胜舟策略测试结果">
+                <div class="nextTitle">资产组合构造模型 - 胜舟策略测试结果</div>
+            </a>
+            
+        </li>
+        <li class="previous">
+            
+            <div class="prevSlogan">Previous Post</div>
+            <a href="/2019/09/24/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD1/" title="资产组合构造模型 - 续1">
+                <div class="prevTitle">资产组合构造模型 - 续1</div>
+            </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80NzMxMS8yMzgxMQ==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:davidqi@outlook.com" target="_blank" rel="noopener" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#风险控制"><span class="toc-number">1.</span> <span class="toc-text">风险控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#资产的选择"><span class="toc-number">2.</span> <span class="toc-text">资产的选择</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 17
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2019/10/25/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AABuyDig2/" >2020年的第一场雪 - Buy Dig 2</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/21</span><a class="archive-post-title" href= "/2019/10/21/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AABuyDig/" >2020年的第一场雪 - Buy Dig</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/15</span><a class="archive-post-title" href= "/2019/10/15/%E5%90%91%E6%AD%BB%E8%80%8C%E7%94%9F/" >向死而生-聊聊期权交易的坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/%E5%8D%96%E6%9C%9F%E6%9D%83%E8%BF%98%E5%88%92%E7%AE%97%E5%90%97/" >卖期权还划算吗？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/30</span><a class="archive-post-title" href= "/2019/09/30/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C/" >资产组合构造模型 - 胜舟策略测试结果</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/" >资产组合构造模型 - 续2 胜舟策略</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2019/09/24/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD1/" >资产组合构造模型 - 续1</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B/" >资产组合构造模型</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/%E9%98%BF%E7%94%98%E4%B8%8E%E6%88%91/" >阿甘与我</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA%E6%9B%B4%E6%96%B0/" >2020年的第一场雪更新</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/" >2020年的第一场雪</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2019/09/07/%E7%8C%A9%E7%8C%A9%E4%B8%8E%E6%88%91/" >猩猩与我</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/%E8%87%B3%E6%9A%97%E6%97%B6%E5%88%BB%E7%9A%84%E9%BB%84%E9%87%91%E9%9B%A8/" >至暗时刻的黄金雨</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/%E5%B1%B1%E9%9B%A8%E6%AC%B2%E6%9D%A5%E9%A3%8E%E6%BB%A1%E6%A5%BC/" >山雨欲来风满楼</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/%E5%96%84%E6%88%98%E8%80%85/" >善战者无赫赫之功</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/" >赚美国人的钱</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/22</span><a class="archive-post-title" href= "/2019/08/22/%E8%B0%81%E5%9C%A8%E5%A4%BA%E8%B5%B0%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E6%9C%AA%E6%9D%A5/" >谁在夺走年轻人的未来</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="实时交易"><span class="iconfont-archer">&#xe606;</span>实时交易</span>
+    
+        <span class="sidebar-tag-name" data-tags="投资理念"><span class="iconfont-archer">&#xe606;</span>投资理念</span>
+    
+        <span class="sidebar-tag-name" data-tags="市场分析"><span class="iconfont-archer">&#xe606;</span>市场分析</span>
+    
+        <span class="sidebar-tag-name" data-tags="量化研究"><span class="iconfont-archer">&#xe606;</span>量化研究</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: ""
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+

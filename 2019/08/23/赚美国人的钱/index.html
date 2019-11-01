@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="">
+    
+    <meta name="keywords" content="美股,美国股票,美国股市,股市,股票,股票交易,美股投资,投资">
+    
+    <meta name="description" content="一起探讨理性投资美股的理念、时机和技巧，以及美股市场周期判断与分析。">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>赚美国人的钱 · 美股派</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href= "/assets/usparty.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >美股派</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">赚美国人的钱</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>美股派</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/images/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/head.jpeg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            赚美国人的钱
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "投资理念">投资理念</a>
+    
+</div>
+                
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/08/23</span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>首先声明：本文的所有内容只是一家之言，仅供参考。A股承载中国改革开放以来的发展历程和希望，正走在积极进取的道路上，前景光明。</p>
+<a href="/2019/08/22/%E8%B0%81%E5%9C%A8%E5%A4%BA%E8%B5%B0%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E6%9C%AA%E6%9D%A5/" title="谁在夺走年轻人的未来">谁在夺走年轻人的未来</a>中我们讲到为了在贫富分化中不被边缘化，投资是大众的当务之急。
+
+<p>那么问题来了，何种投资能在长期取胜，带来较好的综合收益？<a id="more"></a></p>
+<h2 id="为什么是美股"><a href="#为什么是美股" class="headerlink" title="为什么是美股"></a>为什么是美股</h2><p>说到投资，一般主要包括持有固定资产（如房产）、金融类资产（股票、债券、现金等等）、大宗商品、贵金属等等。所有的投资最终划不划算，我们可以观察其收益是否能够跑赢通胀，跑赢定期存款利率，甚至跑赢GDP增长率。很多经济学家根据一百多年来的历史数据做了大量研究，资料繁多，结论是有两类资产长期表现最好，其一是房产，其二是股票。这两者都能够跑赢通胀和存款利率，达到甚至超过GDP增长率的水平。</p>
+<p>中国在过去一二十年经历了房地产的黄金时代，主要是人口增长，城市化进程以及国家政策带来的福利。房产的收益有两部分，一部分是房价的上涨，一部分是房租的收入。如果我们回看十几年，会发现过去国内房产的主要收益来自房价上涨。现在由于“房住不炒”的主导政策，房价上涨的空间有限，以后房产的收入将会主要来自房租。然而国内房产的租售比普遍很低，在1%-3%左右，远低于国际平均水平。所以，我认为房产仍不失为一项好投资，但是未必能如前十几年那么好。</p>
+<p>股票加上用其分红再投资带来的复利收益，其实相当惊人。根据统计，世界各国股市大盘的收益基本能够超过其GDP增长率，A股也不例外。股票的长期收益和房产不相上下，但是股票的流动性要好于房产。</p>
+<p>因为很多人炒股亏了钱，公众普遍认为股票不如房产。我认为原因主要在于，正是由于股票良好的流动性，股票不像房产那样能够长期持有，人们的恐惧贪婪等心理因素导致股票被炒进炒出，这样就容易亏钱了。这是在方法层面需要改善提升的问题，我们以后慢慢聊。</p>
+<p>股票是不错的投资，我们需要进一步在世界各国中就股票的收益进行横向比较。根据历史数据分析，在过去100年在全世界所有国家中，美股是持续成长性最好的少数国家之一，这和二战以来美国企业借助美国的霸权在全球扩张的事实是相符的。</p>
+<p>所以，美股是一项合理的投资。</p>
+<p>然而，除此之外，我心中还有三点更要紧的原因。</p>
+<h2 id="赚美国人的钱"><a href="#赚美国人的钱" class="headerlink" title="赚美国人的钱"></a>赚美国人的钱</h2><p>赚美国人的钱，就是正义。</p>
+<p>美国作为二战以来的全球霸主，长期通过货币税，贸易规则以及地缘政治等等方式，从全世界谋求各种额外利益。根据统计，相对其他西方发达国家，美国每年从全世界获得5%左右的额外财富增长。其实不光美国，前几任全球霸权，比如英国，西班牙，荷兰等等莫不如此。美国股市作为开放的市场，各国的企业都可以去上市，各国的投资者也都可以参与。美国希望通过这种方式享受全球发展的红利，薅全世界的羊毛。我们个体投资者同样可以顺水推舟参与美股，凭本事赚一点美国人的钱，何乐而不为？</p>
+<h2 id="投资你的对手"><a href="#投资你的对手" class="headerlink" title="投资你的对手"></a>投资你的对手</h2><p>我们出生成长在中国，在中国受教育参加工作，是中国社会的一份子。中国发展得好，我们就业环境就宽松，薪资涨得也快。中国如果经济出问题，各行各业的自食其力者都会受影响。所以，简单的说，我们自身的存在就是对中国的投资。</p>
+<p>然而在资产管理上有一个重要原理，为了减少财富的波动，需要避免将所有鸡蛋放在一个篮子里。进一步来说，如果能找到几个不相关甚至负相关，且都具有成长性的资产来分散投资，乃是上上之策。哈里·马科维茨的现代资产组合理论说的就是这个道理，他因此获得了1990年诺贝尔经济奖。全球最大的对冲基金桥水基金的老板达里奥所指的“投资的圣杯”也是基于同样的理论，他发现如果拥有15-20个良好的互不相关的资产，桥水基金就能够大幅降低投资风险而不减少预期收益。桥水基金管理大约1600亿美元的资产，所以需要找到那么多不相关资产才能容纳。我们个人投资者，只需要找到几种就可以了。</p>
+<p>所以，除了将自身投资于中国经济之外，我们还要找到一个不相关甚至负相关资产来平衡风险。黄金等等传统避险资产是可选项，但是其成长性不甚理想。入世以来中国和美国的经济基本相向而行，但是如果全球化受挫，则中美作为最大的两个经济体，有退相关甚至负相关的可能。这当然是我们不愿意看到的情况，然而仅从投资的角度而言，拿出部分资金投资美股是减少风险的合理选项。</p>
+<h2 id="交易的便利"><a href="#交易的便利" class="headerlink" title="交易的便利"></a>交易的便利</h2><p>美股给投资者了很大便利，这里简单罗列一下。</p>
+<p>除了可以买到全世界优秀的公司，美股还有花样繁多的ETF基金，比如波动率，多空，杠杆等等，为投资者提供了丰富弹药。更遑论美股支持日内交易，无涨跌幅限制，可以做多做空。</p>
+<p>投资者还可开立保证金户头，按自有资金的一定倍数获得更多的可用资金，无需任何额外手续。美股交易费用低廉，非美公民无需缴纳资本利得税。</p>
+<p>比较暖心的是美股可以使用期权这种大杀器。投资者可以根据局势判断将期权和股票组合出各种策略，力图在各种市场条件下获利，还可以锁定损益，进行滚动挪仓等花式操作。</p>
+<p>总之，从收益、便利和风控三方面来看，投资美股是不错的选择。下一步，就是如何去做了。</p>
+<p>此时，耳边响起了徐小凤温和勉励的歌声“每一步”。<br><br><br><br></p>
+
+    </article>
+    <!-- license  -->
+    
+    <div class="license-wrapper">
+        <!--hide at 20191101-->
+        <!-- <p>Author：<a href="http://yoursite.com"></a> -->
+        <!-- <p>原文链接：<a href="http://yoursite.com/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/">http://yoursite.com/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/</a> -->
+        <!-- <p>发表日期：<a href="http://yoursite.com/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/">August 23rd 2019, 10:27:25 am</a> -->
+        <!-- <p>更新日期：<a href="http://yoursite.com/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/">November 1st 2019, 3:45:56 pm</a> -->
+        <p>版权声明：本文采用<a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank">非商业性许可协议</a>。转载请注明来源<a href="https://usstock.site" target="_blank" rel="noopener">美股派</a> !</p>
+    </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+            <div class="nextSlogan">Next Post</div>
+            <a href="/2019/08/26/%E5%96%84%E6%88%98%E8%80%85/" title="善战者无赫赫之功">
+                <div class="nextTitle">善战者无赫赫之功</div>
+            </a>
+            
+        </li>
+        <li class="previous">
+            
+            <div class="prevSlogan">Previous Post</div>
+            <a href="/2019/08/22/%E8%B0%81%E5%9C%A8%E5%A4%BA%E8%B5%B0%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E6%9C%AA%E6%9D%A5/" title="谁在夺走年轻人的未来">
+                <div class="prevTitle">谁在夺走年轻人的未来</div>
+            </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC80NzMxMS8yMzgxMQ==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:davidqi@outlook.com" target="_blank" rel="noopener" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么是美股"><span class="toc-number">1.</span> <span class="toc-text">为什么是美股</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#赚美国人的钱"><span class="toc-number">2.</span> <span class="toc-text">赚美国人的钱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#投资你的对手"><span class="toc-number">3.</span> <span class="toc-text">投资你的对手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#交易的便利"><span class="toc-number">4.</span> <span class="toc-text">交易的便利</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 17
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/25</span><a class="archive-post-title" href= "/2019/10/25/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AABuyDig2/" >2020年的第一场雪 - Buy Dig 2</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/21</span><a class="archive-post-title" href= "/2019/10/21/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AABuyDig/" >2020年的第一场雪 - Buy Dig</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/15</span><a class="archive-post-title" href= "/2019/10/15/%E5%90%91%E6%AD%BB%E8%80%8C%E7%94%9F/" >向死而生-聊聊期权交易的坑</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/%E5%8D%96%E6%9C%9F%E6%9D%83%E8%BF%98%E5%88%92%E7%AE%97%E5%90%97/" >卖期权还划算吗？</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/30</span><a class="archive-post-title" href= "/2019/09/30/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C/" >资产组合构造模型 - 胜舟策略测试结果</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD2/" >资产组合构造模型 - 续2 胜舟策略</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/24</span><a class="archive-post-title" href= "/2019/09/24/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B%E7%BB%AD1/" >资产组合构造模型 - 续1</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/%E8%B5%84%E4%BA%A7%E7%BB%84%E5%90%88%E6%9E%84%E9%80%A0%E6%A8%A1%E5%9E%8B/" >资产组合构造模型</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/%E9%98%BF%E7%94%98%E4%B8%8E%E6%88%91/" >阿甘与我</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA%E6%9B%B4%E6%96%B0/" >2020年的第一场雪更新</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/2020%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/" >2020年的第一场雪</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/07</span><a class="archive-post-title" href= "/2019/09/07/%E7%8C%A9%E7%8C%A9%E4%B8%8E%E6%88%91/" >猩猩与我</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/%E8%87%B3%E6%9A%97%E6%97%B6%E5%88%BB%E7%9A%84%E9%BB%84%E9%87%91%E9%9B%A8/" >至暗时刻的黄金雨</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/%E5%B1%B1%E9%9B%A8%E6%AC%B2%E6%9D%A5%E9%A3%8E%E6%BB%A1%E6%A5%BC/" >山雨欲来风满楼</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/%E5%96%84%E6%88%98%E8%80%85/" >善战者无赫赫之功</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/%E8%B5%9A%E7%BE%8E%E5%9B%BD%E4%BA%BA%E7%9A%84%E9%92%B1/" >赚美国人的钱</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/22</span><a class="archive-post-title" href= "/2019/08/22/%E8%B0%81%E5%9C%A8%E5%A4%BA%E8%B5%B0%E5%B9%B4%E8%BD%BB%E4%BA%BA%E7%9A%84%E6%9C%AA%E6%9D%A5/" >谁在夺走年轻人的未来</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="实时交易"><span class="iconfont-archer">&#xe606;</span>实时交易</span>
+    
+        <span class="sidebar-tag-name" data-tags="投资理念"><span class="iconfont-archer">&#xe606;</span>投资理念</span>
+    
+        <span class="sidebar-tag-name" data-tags="市场分析"><span class="iconfont-archer">&#xe606;</span>市场分析</span>
+    
+        <span class="sidebar-tag-name" data-tags="量化研究"><span class="iconfont-archer">&#xe606;</span>量化研究</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: ""
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
