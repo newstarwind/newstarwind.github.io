@@ -1,22 +1,35 @@
 baseURL = 'https://newstarwind.github.io/'
 languageCode = 'zh-cn'
-title = '祁新世界观'
+title = '祁观'
 theme = 'PaperMod'
 
 [params]
-    defaultTheme = "light" # light,dark,auto 切换深浅模式
-    sectionPagesMenu = 'main'    
-    # 重要：对应 content/a/ 和 content/b/ 文件夹的名字
-    mainSections = ["evolution", "worldview"]
+    defaultTheme = "light"                    # light,dark,auto 切换深浅模式
+    sectionPagesMenu = 'main'                 # 定义主菜单的名称
+    mainSections = ["evolution", "worldview"] # 对应 content/a/ 和 content/b/ 文件夹的名字，可以逐渐添加
+    math = false                              # 默认不渲染 数学公式，各个页面按需打开
 
-# 定义菜单 C：搜索
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            [markup.goldmark.extensions.passthrough]
+            enable = true
+                [markup.goldmark.extensions.passthrough.delimiters]
+                    block  = [['\[', '\]'], ['$$', '$$']]
+                    inline = [['\(', '\)'], ['$', '$']]
+
+      
+
+# --- 导航栏菜单配置开始 ---
+
+# 定义菜单：搜索
 [[menus.main]]
     identifier = "search"
     name = "搜索"
     url = "/search/"
     weight = 30 # 权重越大，位置越靠后
 
-# 定义菜单 D：归档
+# 定义菜单：归档
 [[menus.main]]
     identifier = "archives"
     name = "归档"

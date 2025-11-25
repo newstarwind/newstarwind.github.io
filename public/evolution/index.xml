@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>演化论 on 祁新世界观</title>
+    <title>演化论 on 祁观</title>
     <link>http://localhost:1313/evolution/</link>
-    <description>Recent content in 演化论 on 祁新世界观</description>
+    <description>Recent content in 演化论 on 祁观</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 21 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/evolution/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>B1页面</title>
-      <link>http://localhost:1313/evolution/b1/</link>
-      <pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evolution/b1/</guid>
-      <description>&lt;p&gt;这是 B1 的内容。&lt;/p&gt;</description>
+      <title>适应度景观</title>
+      <link>http://localhost:1313/evolution/2_%E9%80%82%E5%BA%94%E5%BA%A6%E6%99%AF%E8%A7%82/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/evolution/2_%E9%80%82%E5%BA%94%E5%BA%A6%E6%99%AF%E8%A7%82/</guid>
+      <description>适应度景观是我们形象化地认识演化规律的最好隐喻。适应度景观中的远近距离、高山与峡谷，种群的在其间的移动，能很好地帮助我们想象亿万年来发生演化事件。</description>
+    </item>
+    <item>
+      <title>从达尔文演化论说起</title>
+      <link>http://localhost:1313/evolution/1_%E4%BB%8E%E8%BE%BE%E5%B0%94%E6%96%87%E6%BC%94%E5%8C%96%E8%AE%BA%E8%AF%B4%E8%B5%B7/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/evolution/1_%E4%BB%8E%E8%BE%BE%E5%B0%94%E6%96%87%E6%BC%94%E5%8C%96%E8%AE%BA%E8%AF%B4%E8%B5%B7/</guid>
+      <description>大自然的算法就是累积小确幸来行大运，达尔文称之为演化。演化的载体是基因。基因就像一部连载中的，情节不断发展的连载小说，没有固定的主题。</description>
     </item>
   </channel>
 </rss>
