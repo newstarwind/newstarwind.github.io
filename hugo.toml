@@ -7,8 +7,10 @@ theme = 'PaperMod'
     defaultTheme = "light"                    # light,dark,auto 切换深浅模式
     sectionPagesMenu = 'main'                 # 定义主菜单的名称
     mainSections = ["evolution", "worldview"] # 对应 content/a/ 和 content/b/ 文件夹的名字，可以逐渐添加
-    math = false                              # 默认不渲染 数学公式，各个页面按需打开
+    math = false                              # 默认网站不渲染数学公式，各个页面按需打开
 
+
+# 配置数学公式支持
 [markup]
     [markup.goldmark]
         [markup.goldmark.extensions]

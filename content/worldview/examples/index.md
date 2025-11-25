@@ -2,7 +2,7 @@
 
 menu:
   main:
-    parent: "menu-worldview" # 这里的 parent 必须对应 _index.md 中定义的 identifier
+    parent: "menu-worldview" # parent 对应分支节点中定义的 identifier
     weight: 1                # 同级页面中的先后，越小越是靠前
 
 date: 2025-11-20T11:27:23+08:00
@@ -10,7 +10,7 @@ title: "Hugo PaperMod 示例"
 author: 祁新
 
 cover:
-  image: images/祁观.png
+  image: images/cover/示例.jpg
   alt: 示例封面
   relative: true
 
@@ -18,6 +18,8 @@ ShowReadingTime: false
 ShowWordCount: false
 ShowToc: true
 TocOpen: true
+
+draft: false
 
 params:
   math: true # 启用 KaTeX 渲染

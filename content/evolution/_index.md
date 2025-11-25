@@ -1,5 +1,5 @@
 ---
-title: "演化论"
+title: "变化与选择"
 menu:
     main:
         identifier: "menu-evolution"
