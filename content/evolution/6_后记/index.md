@@ -1,14 +1,25 @@
 ---
-title: "后记-死亡及其超越"
-seoTitle: "祁新世界观 演化 死亡 哲学 evolution phliosophy"
-seoDescription: "祁新世界观：复杂生命的诞生必须经过筛选，死亡的本质是基因的迭代。活着的意义在于参与试炼，在适应度景观中探索，努力实现作为一种备选方案的可行性。"
-datePublished: Thu Jun 27 2024 08:48:50 GMT+0000 (Coordinated Universal Time)
-cuid: clxx0vsgj000008l318pv8kdr
-slug: cuatus6oewpiuwftui2hei2ig
-cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/_ykb4UBjtGU/upload/1234dcaa3cf2612ad9e607fb6dad6c3f.jpeg
-tags: philosophy, evolution, 56wb5paw5liw55wm6kec
-
+menu:
+  main:
+    parent: menu-evolution
+    weight: 6
+title: 后记-死亡及其超越
+date: 2024-06-27
+author: 祁新
+TocOpen: true
+ShowToc: true
+ShowWordCount: false
+ShowReadingTime: false
+params:
+  math: false
+cover:
+  image: images/cover/死亡.jpeg
+  alt: 封面图片
+  relative: true
+summary: 复杂生命的诞生必须经过筛选，死亡的本质是基因的迭代。活着的意义在于参与试炼，在适应度景观中探索，努力实现作为一种备选方案的可行性。
 ---
+
+# 死亡及其超越
 
 > 我研究物质，我找到精神。 —— [德日进](https://zh.wikipedia.org/wiki/%E5%BE%B7%E6%97%A5%E8%BF%9B)
 
@@ -65,9 +76,9 @@ tags: philosophy, evolution, 56wb5paw5liw55wm6kec
 
 个体，是以生命为赌注的跋涉于景观中的孤独行者。死亡，是它肩上的重负。
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1719474595980/40e857ab-586e-432d-b39c-dd771bbaba67.png align="center")
+{{< figure src="兽群.jpg" align="center" >}}
 
-### 后记
+# 后记
 
 好了，这是 ”变化与选择“ 这个系列的最后一篇了。在该系列中，我本着科学的态度，极为大致地分享我从达尔文开创的演化思想中收获的领悟，此中挖坑甚多，意犹未尽处比比皆是，但是时间有限，力有不逮，前路尚远，不得停歇。
 
@@ -77,7 +88,7 @@ tags: philosophy, evolution, 56wb5paw5liw55wm6kec
 
 2024年6月27日
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1719477573179/8bac6663-4884-4294-a797-4c35a2f3d852.png align="center")
+{{< figure src="大河.jpg" align="center" >}}
 
 ---
 
