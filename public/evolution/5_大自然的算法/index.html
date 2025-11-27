@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>大自然的算法 | 祁观</title>
+<meta name="keywords" content="">
+<meta name="description" content="演化就是基因不断采样外部信息、适配环境的过程。信息处理是演化的一条主线。演化中的各种算法都有办法应对自身的无知。这些算法有：遗传算法、退火算法、蚁群算法、寻路算法等等，以及最重要的分散计算。为了裁剪搜索空间，演化还赋予生命以意向性，其本质就是在搜索算法中的设立启发项。">
+<meta name="author" content="祁新">
+<link rel="canonical" href="http://localhost:1313/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    }
+
+</script>
+    
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="祁观 (Alt + H)">祁观</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/worldview/" title="世界观">
+                    <span>世界观</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/evolution/" title="变化与选择">
+                    <span>变化与选择</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      大自然的算法
+    </h1>
+    <div class="post-meta"><span title='2024-06-01 00:00:00 +0000 UTC'>June 1, 2024</span>&nbsp;·&nbsp;<span>祁新</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/cover/%E7%AE%97%E6%B3%95.jpeg" alt="封面图片">
+        
+</figure><div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%bc%94%e5%8c%96%e7%ae%97%e6%b3%95" aria-label="演化算法">演化算法</a></li>
+                <li>
+                    <a href="#%e9%80%80%e7%81%ab" aria-label="退火">退火</a></li>
+                <li>
+                    <a href="#%e5%88%86%e6%95%a3%e8%ae%a1%e7%ae%97" aria-label="分散计算">分散计算</a></li>
+                <li>
+                    <a href="#%e6%90%9c%e7%b4%a2%e4%b8%8e%e5%90%af%e5%8f%91" aria-label="搜索与启发">搜索与启发</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><blockquote>
+<p>演化不仅会用DNA耍把戏，对所有能处理和存储信息的系统也可以。<br>
+—— 经济学家贝哈克</p>
+</blockquote>
+<p>经过漫长的跋涉，我们终于走到了这里，离收获的原野不远了。但是，那些低垂的果实虽然历历在目，它们广泛散落在周围，难以由一条主线连接起来。</p>
+<p>我们屡次谈到演化就是种群为了适应环境，不断提升对环境的信息感知与信息处理之能力的过程。从这角度来看，<strong>演化就是基因不断采样信息、适配环境的过程</strong>。采样频率越高，适配能力越强，种群就越是具有生存优势。种群的每一次繁衍都是迭代，是一次采样与处理程序的升级，是一个改良的版本。</p>
+<p>而且，从原核细胞到真核细胞，从单细胞到多细胞，从个体到群体，生命趋于复杂。这也是因为，复杂系统比简单系统更能接收、存储和利用信息。</p>
+<p>所以，<strong>信息处理是演化的一条主线</strong>。让我们看一看大自然在这亿万斯年中，提出了那些精彩算法，来处理信息。</p>
+<h1 id="演化算法">演化算法<a hidden class="anchor" aria-hidden="true" href="#演化算法">#</a></h1>
+<p>演化是由几个清晰的步骤组成，是不折不扣的算法。让我们再看一看演化公式的简洁表达：</p>
+<blockquote>
+<p><strong>变化 + 选择 = 演化</strong></p>
+</blockquote>
+<p>变化由基因承载，选择来自环境。变化发散，选择收敛。一张一弛，文武之道。经过无数世代的更替，此算法运行了无数次迭代，35亿年前那个简陋大分子已经繁衍出了生机勃勃的多样性生态，遍布这个蓝色星球。</p>
+<p>演化算法将基因一遍又一遍地打散与重组，以暴力破解的方式，盲目地摸索更好的版本。它的成功，有赖于以RNA与DNA为代表的碳分子所具备的几乎无限的概率空间。碳化合物是地表中最多样的族群，它们的种类理论上超过宇宙的粒子总数。</p>
+<p>演化算法以这种鲁莽的方式，成功地解决各种难题。它提供了一个无须智能就能从混沌中创造秩序，在荒芜中营建高塔的过程。</p>
+<p>我们可以将大自然的演化算法和人类的编程设计进行对比：</p>
+<ul>
+<li>演化算法有路径依赖，事后来看，它在每次迭代中都没有让种群走向灭绝。所以，演化是修修补补的，演化珍惜先前的成果，每次只对它们稍加调整。在演化中，没有推倒重来这回事。</li>
+<li>演化算法是暴力破解，它挥霍地生产大量变体，然后让它们去试炼，活下来的总是少数。</li>
+<li>演化算法是盲目的，没有自上而下的全局设计，它是自组织的。</li>
+<li>演化算法永远在进行中，它没有其他目的，它是一个无限的游戏。</li>
+</ul>
+<p>精彩的算法都具有一个普遍特征，<strong>它们有办法应对自身的无知</strong>，它们是谦逊的。</p>
+<p>随机性是演化算法应对无知的不二法门。</p>
+<p>在基因变异、遗传漂变以及基因重组中，大量存在着随机性。也许有人会认为基于随机性的过程不是算法，但即使是快速排序都离不开随机性，像蒙特卡洛、加密与人工智能那样的诸多算法都充分利用了随机性。</p>
+<p>经由基因变异，大自然随机地提出的候选答案。种群中的每个个体，都是背负着这样一个候选答案，它们努力求生，它们在等待自然选择的点选。随机性本身并不创造秩序，但是经过了自然选择之后，秩序油然而生。让好东西自己冒出来，这个思想值得你拥有。</p>
+<p>在上世纪70年代，以演化算法为样板，约翰·霍兰德提出了<a href="https://zh.wikipedia.org/wiki/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95">遗传算法</a>。遗传算法擅长解决全局最优化的问题，它能够跳出局部最优而找到全局最优点 —— 也就是避开适应度景观中最近的山峰。遗传算法可以用来解决复杂的多因素最优化问题，广泛应用在工业设计、计划调度、模糊控制、人工智能等等领域。</p>
+<h1 id="退火">退火<a hidden class="anchor" aria-hidden="true" href="#退火">#</a></h1>
+<p>演化就是解决问题。种群要解决的问题，是在未知的适应度景观中找到最高峰。</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E9%80%80%E7%81%AB">退火</a> 这个概念源于金属锻造。简单来说，它是指将金属物件先加热后再缓慢冷却的过程，它能够帮助金属物件的原子形成更有序的结晶，释放内部应力，提升延展性。退火可以帮助我们理解演化中种群如何探索未知找到最佳适应性的过程。</p>
+<p>种群通过随机变异产生新的特征。如果种群的数量小，则种群的遗传漂变的作用大，变异趋向广泛而无序，这相当于种群的高温状态。这给了自然选择比较广泛的可选项，就像是选秀节目中最开始的大范围海选一样。</p>
+<p>随着适应性的提升，种群数量逐渐增加，种群的遗传漂变的作用减少，其随机变异的范围会不断收窄，甚至在一定区间内震荡，这相当于种群的温度不断降低。此时，自然选择的不同可选项之间的差距也缩小，就像是选秀节目中的第二轮第三轮的仔细甄选一样。</p>
+<p>在此冷却过程中，种群逐步找到了适应性的最优解。</p>
+<p>我们也可以用适应度景观来帮助理解。景观地形是崎岖不平的，有很多粗糙地形与小山包，它们都不是全局最优解。在地形中某处，有一座富士山，它才是全局最优解。</p>
+<p><img loading="lazy" src="/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/%E9%80%80%E7%81%AB.png">
+（此图来自维基百科）</p>
+<p>如果自然选择只是简单地在每一步寻找向上的路径，它大概率发现不了富士山，很可能困在某个小山包上。引入种群数量变化所导致的遗传漂变过程后，一开始种群的变异是大步伐的，直接滤过了那些坑坑洼洼，也跨过了很多不显著的地形。在第二轮第三轮迭代时，种群的变异才在逐渐收窄步伐。</p>
+<p>或者，我们也可以使用信息采样的方式来理解：</p>
+<p><strong>演化利用基因重组与基因漂变这样的随机性，在未知地图上进行分散采样，试图找到最高峰</strong>。</p>
+<p>最开始的那些采样点一定要很分散，广泛地随机分布在整个地图上。我们首先在它们中间发现了几个比较高的点之后，再围绕这几个点逐渐缩小采样范围，试图发现相邻的更高点。这样的话，我们就比较有可能发现那座富士山了。</p>
+<p>在软件编程中对这一过程的模拟，称之为<a href="https://zh.wikipedia.org/wiki/%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB">退火算法</a>。</p>
+<p>从选秀、冶金与演化中，我们都识别出了退火算法。我相信，在决策中它也非常有用，此后我们就应该虚怀若谷，兼收并蓄了。</p>
+<p>那么，大自然是如何运行演化算法的？这又涉及到其他算法了。</p>
+<h1 id="分散计算">分散计算<a hidden class="anchor" aria-hidden="true" href="#分散计算">#</a></h1>
+<blockquote>
+<p>宇宙中的四种基本作用力 — 强相互作用、电磁相互作用、弱相互作用和引力 — 都是以有限速度传播，随着距离增加急剧衰减的作用力。这也意味着，宇宙中的任何事件，以及这些事件所产生的影响，也是逐渐向外传递且影响范围有限。所以，没有一个中枢会知道某时刻的全局全貌，不存在全知全能。</p>
+</blockquote>
+<p>这是我们思考演化中信息处理时的关键前提。</p>
+<p>演化中的计算，都是发生在事件的本地，仅仅依赖当时当地能够得到的有限信息。计算的执行者，是数量巨大的分散个体。这些执行单元，在演化史中的前三十亿年里是细胞，在最后的五亿年里，是多细胞生物，或者多细胞生物体内的细胞。</p>
+<p>这种同时发生的大量个体所做的本地运算，我称之为 <strong>分散计算</strong>。</p>
+<p>让我们以几个大自然中的例子来看一看分散计算是如何进行的。</p>
+<p>亚马孙雨林中几十万只蚂蚁在行进。单只蚂蚁几乎没有视力，更谈不上智能，也没有谁指挥这支军队。但是这支蚂蚁兵团战阵严整，其徐如林，侵略如火，沿途风卷残云，吞噬一切。在一天里摧毁了足球场大小的面积后，工蚁在夜间抱团成球，将幼蚁与蚁后围在中间保护起来。天亮后，大军继续开拔向前。</p>
+<figure class="align-center ">
+    <img loading="lazy" src="%e8%a1%8c%e5%86%9b.jpg#center" width="400"/> 
+</figure>
+
+<p><a href="https://www.unite.ai/zh-CN/%E7%A7%91%E5%AD%A6%E5%AE%B6%E5%88%A9%E7%94%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%9D%A5%E7%90%86%E8%A7%A3%E8%9A%82%E8%9A%81%E7%9A%84%E4%BA%A4%E6%B5%81/">生态学家弗兰克斯</a> 写道：单只行军蚁是已知的行为最简单的生物，如果将100只行军蚁放在一个平面上，它们会不断往外绕圈直到体力耗尽死去。然而，上百万只蚂蚁在一起就会变成一个整体，成为具有整体智能的宏观生物。</p>
+<p>蚁群大致是这样搜索食物的。开始的时候，很多蚂蚁各自朝随机方向搜索，如果遇到食物，它们就返回蚁穴，沿途留下作为信号的化学物质—— <a href="https://zh.wikipedia.org/wiki/%E4%BF%A1%E6%81%AF%E7%B4%A0">信息素</a>。信息素的浓度越高，其他蚂蚁就越有可能跟着信息素标记的路径走。如果这些蚂蚁也找到了那堆食物，就会返回巢穴，这会继续增强路途上的信息素。如果某些信息素轨迹得不到增强，就会慢慢消失。通过这种方式，蚁群在地形上用信息素描绘了食物的位置与路径。</p>
+<p>这条觅食之路就像是精心绘制的，实际上却是蚁群随机搜索的产物。为了让数量有限的蚂蚁能探测广阔的未知区域，随机性是必需的，获得的信息也是统计性的。</p>
+<p>在这个由随机变化开启的正反馈过程中，明确体现了 “变化+选择” 的演化模式。</p>
+<p>模仿这种信息素沉淀的寻路方式，研究者提出了<a href="https://zh.wikipedia.org/wiki/%E8%9A%81%E7%BE%A4%E7%AE%97%E6%B3%95">蚁群算法</a> 解决最优化问题。</p>
+<p>我们再看另外一个例子，为了保护机体免受病原体的侵害，<a href="https://zh.wikipedia.org/wiki/%E5%85%8D%E7%96%AB%E7%B3%BB%E7%BB%9F">免疫系统</a> 是如何处理信息的。</p>
+<p>所有细胞的表面存在叫做受体的分子，受体能否与某个分子结合取决于二者的空间结构能否匹配，受体是细胞接收信息的输入端，而与它匹配的分子则被称为抗原。所有的病原体都有自己的分子特征，也表现为一种抗原。</p>
+<p>血液中有一种属于免疫系统的B细胞专门负责侦测病原体的抗原。每个B细胞表面的受体都不太一样，可以与特定抗原匹配。如果它遇到了相匹配的抗原并发生了结合，这相当于发现了病原体，开启了免疫的第一步。</p>
+<p><img loading="lazy" src="/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/%E5%85%8D%E7%96%AB.gif">
+（上图来自书籍《复杂》）</p>
+<p>生物体会遇到什么病原体是完全未知的，可能的病原体种类是个天文数字，免疫系统不可能在某时刻产生出那么多B细胞来发现每种病原体。</p>
+<p>因此，免疫系统的办法是，通过B细胞的DNA随机重组，每天制造上千万个随机不同的B细胞。这样，机体对于任何进入体内的病原体，都能很快就生产出与之大致匹配的B细胞，虽然最开始的匹配可能不很精确。</p>
+<p>一旦某个B细胞表面的结合受体之数量超过了某个阈值，B细胞就会被激活，它感觉到了身体受到威胁。这个激活的B细胞马上回到淋巴结那里迅速分裂，产生出大量稍微变异的后代，然后这些后代会与此前俘获的抗原进行结合测试，不能结合的B细胞很快死去。</p>
+<p>存活的B细胞后代回到血液中，将再次遇到先前那些病原体的抗原。相比它们的母细胞，其中一些B细胞后代与这些抗原结合得更紧密，这些激活的B细胞同样又回到淋巴结那里产生出更多自己的后代。</p>
+<p>这个循环不断进行，与抗原匹配得越好的B细胞产生的后代也越多。简而言之，<strong>这就是一个自然选择过程</strong>，B细胞群体演化出与目标抗原越来越匹配的受体，从而使得攻击特定病原体的精确性不断加强。</p>
+<p>这也是 “变化 -&gt; 选择” 的模式的重演，这分明是一个<strong>发现</strong>的过程，先对环境随机采样，然后通过匹配性来进行选择，反复迭代，最终得到结果。</p>
+<p>同蚁群一样，免疫系统是通过大量简单参与者的自发行动来运作的，无人掌控。B细胞群体可以看作一个信号处理网络，一旦某个节点识别出入侵者就会触发网络信号的雪崩，从而产生有效的反应。</p>
+<p>在某一时刻，所有的蚂蚁都在寻路，所有的B细胞都在血液中巡游，它们同时对很多可能性进行扫描。但是，有成果的探索会被重视，获得更多的后续投入，从而有所侧重。因此，这是一个正反馈过程，稳健而高效，而且节省。</p>
+<p>每个个体在决策中所依赖的，只有它自己获得的信息。这些信息中，既有周围有限的环境信息，也有与自己相邻的同类留下的一点点信息 —— 比如信息素，这种计算方式也就是分散计算。</p>
+<p>分散计算与日常使用的电脑是完全不同的。电脑有唯一的CPU与集中的内存，还有总线在它们之间传递数据，电脑的计算集中在CPU中，是集中计算。大自然中可没有单独的CPU和总线之类的结构，每个个体既是CPU，也是内存，它们单个都很简单，大量的个体则构成了网络。</p>
+<p>计算机科学与博弈论的奠基者<a href="https://zh.wikipedia.org/wiki/%E7%BA%A6%E7%BF%B0%C2%B7%E5%86%AF%C2%B7%E8%AF%BA%E4%BC%8A%E6%9B%BC">冯·诺依曼</a> 以<a href="https://zh.wikipedia.org/wiki/%E7%B4%B0%E8%83%9E%E8%87%AA%E5%8B%95%E6%A9%9F">元胞自动机</a> 来表述分散计算。</p>
+<blockquote>
+<p>我们日常使用的计算机是基于冯·诺依曼发明的以运算器与存储器为核心的集中式计算，被称为冯·诺依曼体系。与之区别，元胞自动机被称为非冯·诺依曼体系。因此，冯·诺依曼同时发明了冯·诺依曼体系与非冯·诺依曼体系。</p>
+</blockquote>
+<p>元胞自动机非常简单，但它是复杂系统的理想模型。同自然界中复杂系统一样，元胞自动机也是由大量简单个体组成，没有中央控制，个体只与周围有限的其他个体交互。</p>
+<p>冯·诺依曼最初是要用元胞自动机来模拟生命的自我复制过程。但是，他提出的自复制机器很复杂，每个元胞有29个状态。1970年，数学家康威发现了一种简单得多的两状态的二维元胞自动机，也能进行通用计算，他称之为 <a href="https://zh.wikipedia.org/zh-hans/%E5%BA%B7%E5%A8%81%E7%94%9F%E5%91%BD%E6%B8%B8%E6%88%8F"><strong>生命游戏</strong></a> 。康威证明，仅仅通过开关状态就能让生命游戏模实现与、或、非等逻辑运算。原则上，逻辑运算的所有可能组合都能在生命游戏中实现。</p>
+<p>另一位天才<a href="https://zh.wikipedia.org/wiki/%E5%8F%B2%E8%92%82%E8%8A%AC%C2%B7%E6%B2%83%E7%88%BE%E5%A4%AB%E5%8B%92%E5%A7%86">沃尔夫勒姆</a> 在 <a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E7%A7%8D%E6%96%B0%E7%A7%91%E5%AD%A6">《一种新科学》</a> 中认为，元胞自动机这样的分散计算是自然界中复杂性的来源，大量的简单个体所组成的网络就可以轻易实现通用运算，在粒子层面、细胞层面、在社会中，这种现象比比皆是。</p>
+<p>值得注意的是，大脑中的神经元之间也是以网络模式进行运算的，这一点我们以后再详细探讨。</p>
+<h1 id="搜索与启发">搜索与启发<a hidden class="anchor" aria-hidden="true" href="#搜索与启发">#</a></h1>
+<p>只要演化还在继续，生物自身以及生存环境趋于复杂的趋势是不会停止的。</p>
+<p>但是，生物个体毕竟只是一个有机体，它的食物有限，能耗不能太高，体型不能太大，头脑不能太重。</p>
+<p>这样，从信息处理的角度来看，个体将逐渐陷入一个困境：如何用有限的算力处理趋于无限复杂的问题。</p>
+<p>这个问题相当于如何在非常多的可选项中以有限成本搜寻最优解，我们可以用软件编程中的寻路与之类比。</p>
+<p>在即时战略游戏中，玩家如果用鼠标点击地图中某处，他操控的角色就会以最短的路线移动过去。在编程中，这类计算出发地点和目标点之间最短路径的算法被称为寻路算法。</p>
+<p><a href="https://zh.wikipedia.org/zh-cn/A*%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95"><strong>A* 算法</strong></a> 是最常使用的寻路算法，它很符合前面提到的分散运算模式。它的初级版本是从出发点开始，查看其最近相邻点中是否有目标点。如果没有，则继续查看这些点的最近相邻点，这样一步步地向四周扩散开来，直到发现目标地点。</p>
+<p>初级版本很简单，在处理小地图时基本可行。但是，当地图大到某个程度，比如有 $1000 * 1000$ 个格子，并且地形中有大量障碍物时，它就效率不高了，因为算法会以出发点为中心，由近及远遍历周围的所有格子，要处理的格子数量太多。玩家点击地图某处之后，等了好几秒，角色还没有移动，影响游戏体验。</p>
+<p>为了处理更大的地图，需要在初级版本上的进行改良。</p>
+<p>程序员尝试在检查相邻点的时候，加上某个 <strong>启发</strong> 值作为权重。在所有相邻点中，启发值越大的点越先进行搜索。启发值是与该点与目标点的直线距离成反比的，比如A点与目标点的直线距离是10，则其启发值为0.1。B点与目标点的直线距离是5，则启发值为0.5。这样，B点将先于A点进行搜索，B点之相邻点的启发值如果还是大于A点，则这些相邻点会继续优先与A点。这样，改良算法将避免去无倾向地遍历所有相邻格子，而是会优先搜索那些接近目标方向的格子。只有在这些格子都搜索完毕了，但是还没有找到目标点的情况下，才回头去搜索那些启发值不高的格子。</p>
+<p><a href="https://zh.wikipedia.org/zh-cn/A*%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95#/media/File:Astar_progress_animation.gif">这里</a> 可以看到改良版的示意图。</p>
+<p>改良之后，算法的效率高了很多，而且还可以进一步优化。如果不同角色对于地形有不一样的通行成本，也可以将之设置到启发值中去。例如，骑兵在平原上走得快，步兵可以爬山。这样，即使步兵与骑兵的出发点与目的点完全相同，也会得到不同的路线。骑兵即使绕路也会多半走平路，而步兵则可以翻越山隘走捷径。</p>
+<p>改良后的版本，就是我们常见的 A* 寻路算法，它是目前游戏中用到的主流寻路算法。很多人工智能算法，比如战胜李世石与柯洁的 <a href="https://zh.wikipedia.org/zh-cn/AlphaGo">AlphaG</a>，也是基于启发的搜索算法，它以评估函数输出的胜率作为启发值。</p>
+<p>在这里，我们可以看到，<strong>“启发” 可以裁剪搜索空间，“启发” 来自目的。</strong></p>
+<p>人类能想到的窍门，大自然当然也能。</p>
+<p>除了组成了真社会的蚂蚁和蜜蜂，在绝大多数情况下，自然选择的作用点是生物个体。所以在自然选择的驱动下，在漫长演化中，个体也逐渐学会了用“启发”来帮助自己决策，适应日趋复杂的生存环境。启发机制逐渐铭刻进了个体的基因中。</p>
+<p>那么在演化中，启发的具体含义是什么呢？</p>
+<p>在寻路算法中，启发直接与目的相关，它用当前点与目标之间的直线距离来计算。演化中，个体的目的就是适应。根据演化公式，适应以两个趋势的互动来促成：变化与存续。所以，<strong>变化与存续，这就是演化赋予个体的启发机制，它们成为个体的内在意向性，也就是我们通常所说的</strong><a href="https://zh.wikipedia.org/wiki/%E6%9C%AC%E8%83%BD"><strong>本能</strong></a><strong>。它赋予个体意向性，定义优先级，裁剪搜索空间，提升决策效率。</strong> (我们在后续讨论人类时，这二者体现为 “不朽与自由” 这两项根本驱动。)</p>
+<p>籍由本能的驱动，个体可以清晰地在日常活动中快速决策，帮助自己存续。本能成为个体的第一反应，它构成了动物的行为决策的 “<a href="https://zh.wikipedia.org/zh-cn/%E5%BF%AB%E6%80%9D%E6%85%A2%E6%83%B3">快系统</a>” 或者说 “硬链接”。</p>
+<p>在人类出现之后，本能又有了新的内禀，它与价值意义等概念产生了瓜葛，这是后话了。</p>
+<figure class="align-center ">
+    <img loading="lazy" src="%e5%af%bb%e5%ae%9d.jpg#center" width="400"/> 
+</figure>
+
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">祁观</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
