@@ -1,10 +1,7 @@
 [
     {{ $list := .Site.RegularPages }}
   
-    {{/* 
-       根据您目前的结构（evolution 和 worldview），我们使用 mainSections 过滤。
-       如果您的所有文章都在 mainSections 中，则可以直接使用 .Site.RegularPages
-    */}}
+
   
     {{ if .Site.Params.mainSections }}
         {{ $list = where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
@@ -14,12 +11,15 @@
     {{ range $index, $page := $list }}
     {{ if and (not $page.Draft) (not $page.Params.exclude_search) }}
     
-    {
-        "uri": "{{ $page.Permalink }}",
+    
+   {
+        "permalink": "{{ $page.RelPermalink }}",
         "title": "{{ $page.Title }}",
         "section": "{{ .Section | default "pages" }}",
         "content": {{ $page.Content | plainify | jsonify }}
-    }
+   }
+
+
 
     {{ if lt $index (sub $len 1) }},{{ end }}
     {{ end }}
