@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{/* 首页的标题/描述 */}}
+<header class="page-header">    
+    {{ with .Description }}
+    <div class="post-description">{{ . }}</div>
+    {{ end }}
+</header>
+
+{{/* 列表文章：只获取 mainSections 中定义的常规文章 */}}
+{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+
+{{ if $pages }}
+    <div class="posts-entry">
+        {{/* 首页通常按最新在前排序 (ByDate.Reverse) */}}
+        {{ range $pages.ByDate.Reverse }}
+        {{ if not .Draft }}
+            <article class="post-entry">
+                {{/* 关键：只渲染标题和元数据，不包含图片代码 */}}
+                <header class="entry-header">
+                    <h2>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
+                </header>
+                {{ with .Summary }}
+                <div class="entry-content">
+                    <p>{{ . }}</p>
+                </div>
+                {{ end }}
+                <div class="entry-meta">
+                    {{ partial "post_meta.html" . }}
+                </div>
+            </article>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    {{/* 如果您想要分页功能，并且您已修复了 paginator.html 的问题，可以添加： */}}
+    {{/* partial "paginator.html" . */}}
+
+{{ else }}
+    <p>抱歉，首页未找到任何文章。</p>
+{{ end }}
+
+{{ end }}

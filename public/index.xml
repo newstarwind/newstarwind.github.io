@@ -6,28 +6,14 @@
     <description>Recent content on 祁观</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 20 Nov 2025 11:27:23 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A2页面</title>
-      <link>http://localhost:1313/worldview/a2/</link>
-      <pubDate>Thu, 20 Nov 2025 11:27:23 +0800</pubDate>
-      <guid>http://localhost:1313/worldview/a2/</guid>
-      <description>&lt;p&gt;这是 A2 的内容。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo PaperMod 示例</title>
-      <link>http://localhost:1313/worldview/examples/</link>
-      <pubDate>Thu, 20 Nov 2025 11:27:23 +0800</pubDate>
-      <guid>http://localhost:1313/worldview/examples/</guid>
-      <description>这是一篇关于如何配置 PaperMod 头部信息的详细教程</description>
-    </item>
-    <item>
-      <title>大自然的算法</title>
-      <link>http://localhost:1313/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/</link>
+      <title>演化的算法与趋势</title>
+      <link>http://localhost:1313/evolution/5_%E6%BC%94%E5%8C%96%E7%9A%84%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/</guid>
-      <description>演化就是基因不断采样外部信息、适配环境的过程。信息处理是演化的一条主线。演化中的各种算法都有办法应对自身的无知。这些算法有：遗传算法、退火算法、蚁群算法、寻路算法等等，以及最重要的分散计算。为了裁剪搜索空间，演化还赋予生命以意向性，其本质就是在搜索算法中的设立启发项。</description>
+      <guid>http://localhost:1313/evolution/5_%E6%BC%94%E5%8C%96%E7%9A%84%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/</guid>
+      <description>演化就是基因不断采样外部信息、适配环境的过程。信息处理是演化的一条主线。演化中的各种算法都有办法应对自身的无知。这些算法有：遗传算法、退火算法、蚁群算法、寻路算法等等，以及最重要的分散计算。为了裁剪搜索空间，演化还赋予生命以意向性，其本质就是在搜索算法中的设立启发项。演化最明显的趋势是，生命之树不断分叉，然后物种越来越复杂。进而，物种逐渐提升能量利用效率。最后，物种处理越来越多的信息。随着信息处理能力的升级，物种也表现出了不同的认知模式。</description>
     </item>
     <item>
       <title>演化的本质</title>
@@ -49,6 +35,13 @@
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/evolution/2_%E9%80%82%E5%BA%94%E5%BA%A6%E6%99%AF%E8%A7%82/</guid>
       <description>适应度景观是认识演化规律的最好隐喻。景观中的远近距离、高山与峡谷、种群的在其间的移动，都能很好地帮助我们想象亿万年来发生演化事件。物种丰富，种群众多，四通八达的开阔地带，是自然选择压力剧烈之处，是演化的修罗场。外来物种少、生存压力不大的岛屿，是演化的创造力实验室，是伊甸园。有性繁殖就像是父母合力将孩子瞬间传送了几千公里，使生命在广阔的适应度景观中，能够以巨大的步伐跨越山海抵达远方，帮助它们尽快探索各种新的可能性。基因重组的出现，能量等级的提升，复杂性的累积这三个因素的互相促进，带来了在寒武纪时物种的大爆发。适应度景观不是静止的地图，而是缓缓移动的波峰。环境的改变，外来事件的发生，都会彻底改变适应度景观，演化永不止息。环境变化是演化的帮手。景观中的种群其实不是在跨越山谷，而是原先的山峰变为低谷之后，不得不重新上路，开始新的探寻。就近停留在最近的山峰处，是一个舍本逐末的陷阱。景观是求解复杂问题的利器，在找到相关因素以及适应度函数之后，求解最优化问题，就转化为在适应度景观上的搜索与寻路过程。</description>
+    </item>
+    <item>
+      <title>Hugo 页面设置</title>
+      <link>http://localhost:1313/worldview/examples/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/worldview/examples/</guid>
+      <description>这是一篇关于如何配置 头部信息 以及 页面内容 的详细教程</description>
     </item>
     <item>
       <title>从达尔文演化论说起</title>

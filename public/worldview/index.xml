@@ -6,21 +6,14 @@
     <description>Recent content in 世界观 on 祁观</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 20 Nov 2025 11:27:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/worldview/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A2页面</title>
-      <link>http://localhost:1313/worldview/a2/</link>
-      <pubDate>Thu, 20 Nov 2025 11:27:23 +0800</pubDate>
-      <guid>http://localhost:1313/worldview/a2/</guid>
-      <description>&lt;p&gt;这是 A2 的内容。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo PaperMod 示例</title>
+      <title>Hugo 页面设置</title>
       <link>http://localhost:1313/worldview/examples/</link>
-      <pubDate>Thu, 20 Nov 2025 11:27:23 +0800</pubDate>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/worldview/examples/</guid>
-      <description>这是一篇关于如何配置 PaperMod 头部信息的详细教程</description>
+      <description>这是一篇关于如何配置 头部信息 以及 页面内容 的详细教程</description>
     </item>
   </channel>
 </rss>

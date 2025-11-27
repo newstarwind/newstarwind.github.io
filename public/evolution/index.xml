@@ -9,11 +9,11 @@
     <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/evolution/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>大自然的算法</title>
-      <link>http://localhost:1313/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/</link>
+      <title>演化的算法与趋势</title>
+      <link>http://localhost:1313/evolution/5_%E6%BC%94%E5%8C%96%E7%9A%84%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evolution/5_%E5%A4%A7%E8%87%AA%E7%84%B6%E7%9A%84%E7%AE%97%E6%B3%95/</guid>
-      <description>演化就是基因不断采样外部信息、适配环境的过程。信息处理是演化的一条主线。演化中的各种算法都有办法应对自身的无知。这些算法有：遗传算法、退火算法、蚁群算法、寻路算法等等，以及最重要的分散计算。为了裁剪搜索空间，演化还赋予生命以意向性，其本质就是在搜索算法中的设立启发项。</description>
+      <guid>http://localhost:1313/evolution/5_%E6%BC%94%E5%8C%96%E7%9A%84%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/</guid>
+      <description>演化就是基因不断采样外部信息、适配环境的过程。信息处理是演化的一条主线。演化中的各种算法都有办法应对自身的无知。这些算法有：遗传算法、退火算法、蚁群算法、寻路算法等等，以及最重要的分散计算。为了裁剪搜索空间，演化还赋予生命以意向性，其本质就是在搜索算法中的设立启发项。演化最明显的趋势是，生命之树不断分叉，然后物种越来越复杂。进而，物种逐渐提升能量利用效率。最后，物种处理越来越多的信息。随着信息处理能力的升级，物种也表现出了不同的认知模式。</description>
     </item>
     <item>
       <title>演化的本质</title>

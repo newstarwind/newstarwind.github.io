@@ -1,30 +1,27 @@
 ---
-
 menu:
   main:
-    parent: "menu-worldview" # parent 对应分支节点中定义的 identifier
-    weight: 1                # 同级页面中的先后，越小越是靠前
+    parent: menu-worldview
+    weight: 1                
 
-date: 2025-11-20T11:27:23+08:00
-title: "Hugo PaperMod 示例"
+title: "Hugo 页面设置"
+date: 2024-05-27
 author: 祁新
 
+TocOpen: true
+ShowToc: true
+ShowWordCount: false
+ShowReadingTime: false
+
 cover:
-  image: images/cover/示例.jpg
-  alt: 示例封面
+  image: images/cover/从演化论说起.jpeg
+  alt: 封面图片
   relative: true
 
-ShowReadingTime: false
-ShowWordCount: false
-ShowToc: true
-TocOpen: true
-
-draft: false
-
 params:
-  math: true # 启用 KaTeX 渲染
+  math: true 
 
-summary: 这是一篇关于如何配置 PaperMod 头部信息的详细教程
+summary: 这是一篇关于如何配置 头部信息 以及 页面内容 的详细教程
 ---
 
 你好，世界！
