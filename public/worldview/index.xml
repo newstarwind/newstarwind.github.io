@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/worldview/examples/</guid>
       <description>这是一篇关于如何配置 头部信息 以及 页面内容 的详细教程</description>
     </item>
+    <item>
+      <title>宇宙是偶然的</title>
+      <link>http://localhost:1313/worldview/1_%E5%AE%87%E5%AE%99%E6%98%AF%E5%81%B6%E7%84%B6%E7%9A%84/</link>
+      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/worldview/1_%E5%AE%87%E5%AE%99%E6%98%AF%E5%81%B6%E7%84%B6%E7%9A%84/</guid>
+      <description>宇宙在根本上运行在偶然性之上。不论是物理学规律，物质的产生与分布，还是我们所处的宇宙本身，万事万物的多样性，都是偶然性的产物。</description>
+    </item>
   </channel>
 </rss>
