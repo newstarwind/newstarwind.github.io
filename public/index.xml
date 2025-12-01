@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>祁观</title>
+    <title>祁观首页 on 祁观</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on 祁观</description>
+    <description>Recent content in 祁观首页 on 祁观</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
@@ -44,13 +44,6 @@
       <description>适应度景观是认识演化规律的最好隐喻。景观中的远近距离、高山与峡谷、种群的在其间的移动，都能很好地帮助我们想象亿万年来发生演化事件。物种丰富，种群众多，四通八达的开阔地带，是自然选择压力剧烈之处，是演化的修罗场。外来物种少、生存压力不大的岛屿，是演化的创造力实验室，是伊甸园。有性繁殖就像是父母合力将孩子瞬间传送了几千公里，使生命在广阔的适应度景观中，能够以巨大的步伐跨越山海抵达远方，帮助它们尽快探索各种新的可能性。基因重组的出现，能量等级的提升，复杂性的累积这三个因素的互相促进，带来了在寒武纪时物种的大爆发。适应度景观不是静止的地图，而是缓缓移动的波峰。环境的改变，外来事件的发生，都会彻底改变适应度景观，演化永不止息。环境变化是演化的帮手。景观中的种群其实不是在跨越山谷，而是原先的山峰变为低谷之后，不得不重新上路，开始新的探寻。就近停留在最近的山峰处，是一个舍本逐末的陷阱。景观是求解复杂问题的利器，在找到相关因素以及适应度函数之后，求解最优化问题，就转化为在适应度景观上的搜索与寻路过程。</description>
     </item>
     <item>
-      <title>Hugo 页面设置</title>
-      <link>http://localhost:1313/worldview/examples/</link>
-      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/worldview/examples/</guid>
-      <description>这是一篇关于如何配置 头部信息 以及 页面内容 的详细教程</description>
-    </item>
-    <item>
       <title>从达尔文演化论说起</title>
       <link>http://localhost:1313/evolution/1_%E4%BB%8E%E8%BE%BE%E5%B0%94%E6%96%87%E6%BC%94%E5%8C%96%E8%AE%BA%E8%AF%B4%E8%B5%B7/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
@@ -58,11 +51,18 @@
       <description>大自然的算法就是累积小确幸来行大运，达尔文称之为演化。演化的载体是基因。基因就像一部连载中的，情节不断发展的连载小说，没有固定的主题。</description>
     </item>
     <item>
-      <title>宇宙是偶然的</title>
+      <title>宇宙是不可知的</title>
+      <link>http://localhost:1313/worldview/2_%E5%AE%87%E5%AE%99%E6%98%AF%E4%B8%8D%E5%8F%AF%E7%9F%A5%E7%9A%84/</link>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/worldview/2_%E5%AE%87%E5%AE%99%E6%98%AF%E4%B8%8D%E5%8F%AF%E7%9F%A5%E7%9A%84/</guid>
+      <description>宇宙是偶然与不可知的。我们只能得到现象，而不是真相。现实是一种构建。我们努力建立模型，但是它始终只是一种阐释，一种视角，一种立场。</description>
+    </item>
+    <item>
+      <title>宇宙是随机的</title>
       <link>http://localhost:1313/worldview/1_%E5%AE%87%E5%AE%99%E6%98%AF%E5%81%B6%E7%84%B6%E7%9A%84/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/worldview/1_%E5%AE%87%E5%AE%99%E6%98%AF%E5%81%B6%E7%84%B6%E7%9A%84/</guid>
-      <description>宇宙在根本上运行在偶然性之上。不论是物理学规律，物质的产生与分布，还是我们所处的宇宙本身，万事万物的多样性，都是偶然性的产物。</description>
+      <description>宇宙在根本上运行在随机性之上。不论是物理学规律，物质的产生与分布，还是我们所处的宇宙本身，万事万物的多样性，都是随机性的产物。</description>
     </item>
     <item>
       <title>关于我</title>
@@ -90,7 +90,7 @@
 &lt;p&gt;本系列文章试图提出一套关于我们自己和社会群体的简明模型，这是我对于世界的看法。&lt;/p&gt;
 &lt;p&gt;为什么要写本系列文章？&lt;/p&gt;
 &lt;p&gt;首要原因，是希望借助分享，驱使自己进步。边学边做，边交流边改进，敏捷开发，迭代式进步，才是最好的学习方法。&lt;/p&gt;
-&lt;p&gt;其次是为了愉悦。如果有些我们所相信的能够解释事情，那么我们自己的头脑 — 那也是一个系统 — 就会进入一个总体熵值较低的有序状态，通透明澈，收获 &lt;strong&gt;我懂了&lt;/strong&gt; 的愉悦。本系列文章的观点虽然浅显，却能够解释广泛的现象，或多或少有独特性，值得与大家分享这份愉悦。&lt;/p&gt;
+&lt;p&gt;其次是为了愉悦。如果有些自己所相信的法则能够真正解释我们所遇到的事情，那么我们自己的头脑 — 那也是一个系统 — 就会进入一个总体熵值较低的有序状态，通透明澈，收获 &lt;strong&gt;我懂了&lt;/strong&gt; 的愉悦。本系列文章的观点虽然浅显，却能够解释广泛的现象，或多或少有独特性，值得与大家分享这份愉悦。&lt;/p&gt;
 &lt;p&gt;最后则是为了增长机缘。如果能就正方家，错以金石，取长补短，获得新知，实则意外之喜了。&lt;/p&gt;
 &lt;h1 id=&#34;模式匹配&#34;&gt;模式匹配&lt;/h1&gt;
 &lt;p&gt;在本文的论述中，我没有使用通常的归纳和演绎的方式。众所周知，这两种方式最为科学严谨，能够得出有信服力的结论。但是，由于我不是科学家，也不是从事学术的专业人士，鉴于所讲述的问题颇为广泛，我没有时间和能力进行大量的资料采集与整理，按照严格的科学方法步步为营地论述。&lt;/p&gt;

@@ -13,6 +13,9 @@ ShowToc: true
 ShowWordCount: false
 ShowReadingTime: false
 
+params:
+  math: true
+
 cover:
   image: images/cover/从演化论说起.jpeg
   alt: 封面图片

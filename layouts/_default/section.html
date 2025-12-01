@@ -45,9 +45,10 @@
         {{/* 2. worldview 系列：时间由后到先 (最新在前) */}}
         {{ else if eq $currentSection "worldview" }} 
 
-            {{/* 使用 .ByDate.Reverse 降序排列 (最新 -> 最旧) */}}
-
-            {{ range $pages.ByDate.Reverse }}
+            {{/* 使用 .ByDate.Reverse 降序排列 (最旧 -> 最新) */}}
+            {{/* {{ range $pages.ByDate.Reverse }} */}}
+            
+            {{ range $pages.ByDate }}
                 {{ if not .Draft }}
                   <article class="post-entry">
                     <header class="entry-header">

@@ -12,6 +12,7 @@ TocOpen: true
 ShowToc: true
 ShowWordCount: false
 ShowReadingTime: false
+draft: true
 
 cover:
   image: images/cover/从演化论说起.jpeg
