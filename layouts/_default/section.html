@@ -18,61 +18,22 @@
 {{ end }}
 
 {{ if $pages }}
-    <div class="posts-entry">
-        
-        {{/*
-            ================================================
-            核心条件排序逻辑
-            ================================================
-        */}}
-        
-        {{/* 1. evolution 系列：时间由先到后 (最旧在前) */}}
-        {{ if eq $currentSection "evolution" }}
-            
-            {{/* 使用 .ByDate 升序排列 (最旧 -> 最新) */}}
-            
-            {{ range $pages.ByDate }}
-                {{ if not .Draft }}
-                    <article class="post-entry">                        
-                        <header class="entry-header">
-                            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                        </header>
-                        <div class="entry-meta">{{ partial "post_meta.html" . }}</div>
-                    </article>
-                {{ end }}
-            {{ end }}
-        
-        {{/* 2. worldview 系列：时间由后到先 (最新在前) */}}
-        {{ else if eq $currentSection "worldview" }} 
-
-            {{/* 使用 .ByDate.Reverse 降序排列 (最旧 -> 最新) */}}
-            {{/* {{ range $pages.ByDate.Reverse }} */}}
-            
-            {{ range $pages.ByDate }}
-                {{ if not .Draft }}
-                  <article class="post-entry">
-                    <header class="entry-header">
-                        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <div class="posts-entry">        
+        {{/* 排序逻辑 */}}
+                        
+        {{ $sorted  := $pages.ByDate }}
+                
+        {{ range $sorted }}
+            {{ if not .Draft }}
+                <article class="post-entry"> 
+                    <header class="entry-header"><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>                    
                     </header>
                     <div class="entry-meta">{{ partial "post_meta.html" . }}</div>
-                  </article>
-                {{ end }}
-            {{ end }}
-
-
-        {{/* 3. 其他所有系列：使用默认排序 (最新在前) */}}
-        {{ else }}
-            {{ range $pages.ByDate.Reverse }}
-                {{ if not .Draft }}
-                        <header class="entry-header">
-                            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                        </header>
-                        <div class="entry-meta">{{ partial "post_meta.html" . }}  </div>
-                {{ end }}
+                </article>
             {{ end }}
         {{ end }}
-
     </div>
+
 
 
 {{ else }}

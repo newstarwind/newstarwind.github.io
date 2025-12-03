@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>不朽与自由 on 祁观</title>
+    <link>http://localhost:1313/freedom/</link>
+    <description>Recent content in 不朽与自由 on 祁观</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 21 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/freedom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博弈与秩序</title>
+      <link>http://localhost:1313/freedom/4_%E5%8D%9A%E5%BC%88%E4%B8%8E%E7%A7%A9%E5%BA%8F/</link>
+      <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/4_%E5%8D%9A%E5%BC%88%E4%B8%8E%E7%A7%A9%E5%BA%8F/</guid>
+      <description>演化在人类社会中体现为无穷尽的博弈。</description>
+    </item>
+    <item>
+      <title>智力的迁跃</title>
+      <link>http://localhost:1313/freedom/3_%E6%99%BA%E5%8A%9B%E7%9A%84%E8%BF%81%E8%B7%83/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/3_%E6%99%BA%E5%8A%9B%E7%9A%84%E8%BF%81%E8%B7%83/</guid>
+      <description>狩猎和群体合作推动了大脑的发展和人类社会的形成。探索人类社会化与智力发展的深刻原因，从亲属选择到机会主义者在群体中的角色。探索语言在智人进化中的关键作用及其对人类社会复杂性的推动。</description>
+    </item>
+    <item>
+      <title>从猿到人</title>
+      <link>http://localhost:1313/freedom/2_%E4%BB%8E%E7%8C%BF%E5%88%B0%E4%BA%BA/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/2_%E4%BB%8E%E7%8C%BF%E5%88%B0%E4%BA%BA/</guid>
+      <description>探索人类在地球演化中的独特地位，以及人类从动物演化而来的简要旅程。</description>
+    </item>
+    <item>
+      <title>前言—不朽与自由</title>
+      <link>http://localhost:1313/freedom/1_%E4%B8%8D%E6%9C%BD%E4%B8%8E%E8%87%AA%E7%94%B1/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/1_%E4%B8%8D%E6%9C%BD%E4%B8%8E%E8%87%AA%E7%94%B1/</guid>
+      <description>演化赋予个体以不朽与自由的永恒冲动，它是我们价值观的基础，是一系列后续演化的驱动力。</description>
+    </item>
+  </channel>
+</rss>

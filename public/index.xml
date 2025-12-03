@@ -6,8 +6,29 @@
     <description>Recent content in 祁观首页 on 祁观</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>智力的迁跃</title>
+      <link>http://localhost:1313/freedom/3_%E6%99%BA%E5%8A%9B%E7%9A%84%E8%BF%81%E8%B7%83/</link>
+      <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/3_%E6%99%BA%E5%8A%9B%E7%9A%84%E8%BF%81%E8%B7%83/</guid>
+      <description>狩猎和群体合作推动了大脑的发展和人类社会的形成。探索人类社会化与智力发展的深刻原因，从亲属选择到机会主义者在群体中的角色。</description>
+    </item>
+    <item>
+      <title>从猿到人</title>
+      <link>http://localhost:1313/freedom/2_%E4%BB%8E%E7%8C%BF%E5%88%B0%E4%BA%BA/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/2_%E4%BB%8E%E7%8C%BF%E5%88%B0%E4%BA%BA/</guid>
+      <description>探索人类在地球演化中的独特地位，以及人类从动物演化而来的简要旅程。</description>
+    </item>
+    <item>
+      <title>前言—不朽与自由</title>
+      <link>http://localhost:1313/freedom/1_%E4%B8%8D%E6%9C%BD%E4%B8%8E%E8%87%AA%E7%94%B1/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/freedom/1_%E4%B8%8D%E6%9C%BD%E4%B8%8E%E8%87%AA%E7%94%B1/</guid>
+      <description>演化赋予个体以不朽与自由的永恒冲动，它是我们价值观的基础，是一系列后续演化的驱动力。</description>
+    </item>
     <item>
       <title>后记-死亡及其超越</title>
       <link>http://localhost:1313/evolution/6_%E5%90%8E%E8%AE%B0/</link>
@@ -48,7 +69,7 @@
       <link>http://localhost:1313/worldview/3_%E5%AE%87%E5%AE%99%E7%9A%84%E5%88%9B%E9%80%A0%E6%80%A7/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/worldview/3_%E5%AE%87%E5%AE%99%E7%9A%84%E5%88%9B%E9%80%A0%E6%80%A7/</guid>
-      <description>宇宙存在的本身是没有目的，但是它的演化体现出一个根本趋势。此趋势在宇宙的局部演化过程中不断显现与重复，就像交响乐的主题一样反复变奏，这个根本性的趋势就是宇宙的创造性。</description>
+      <description>宇宙存在的本身是没有目的，但是它的演化体现出一个根本趋势。此趋势在宇宙的局部演化过程中不断显现与重复，就像交响乐的主题一样反复变奏，这个根本性的趋势就是宇宙的创造性。宇宙的创造性也体现在其造物——生命之上，成为所有个体的本质冲动与整体趋势。</description>
     </item>
     <item>
       <title>景观视角下的演化</title>
@@ -56,6 +77,13 @@
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/evolution/2_%E9%80%82%E5%BA%94%E5%BA%A6%E6%99%AF%E8%A7%82/</guid>
       <description>适应度景观是认识演化规律的最好隐喻。景观中的远近距离、高山与峡谷、种群的在其间的移动，都能很好地帮助我们想象亿万年来发生演化事件。物种丰富，种群众多，四通八达的开阔地带，是自然选择压力剧烈之处，是演化的修罗场。外来物种少、生存压力不大的岛屿，是演化的创造力实验室，是伊甸园。有性繁殖就像是父母合力将孩子瞬间传送了几千公里，使生命在广阔的适应度景观中，能够以巨大的步伐跨越山海抵达远方，帮助它们尽快探索各种新的可能性。基因重组的出现，能量等级的提升，复杂性的累积这三个因素的互相促进，带来了在寒武纪时物种的大爆发。适应度景观不是静止的地图，而是缓缓移动的波峰。环境的改变，外来事件的发生，都会彻底改变适应度景观，演化永不止息。环境变化是演化的帮手。景观中的种群其实不是在跨越山谷，而是原先的山峰变为低谷之后，不得不重新上路，开始新的探寻。就近停留在最近的山峰处，是一个舍本逐末的陷阱。景观是求解复杂问题的利器，在找到相关因素以及适应度函数之后，求解最优化问题，就转化为在适应度景观上的搜索与寻路过程。</description>
+    </item>
+    <item>
+      <title>Hugo 页面设置</title>
+      <link>http://localhost:1313/worldview/examples/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/worldview/examples/</guid>
+      <description>这是一篇关于如何配置 头部信息 以及 页面内容 的详细教程</description>
     </item>
     <item>
       <title>从达尔文演化论说起</title>
@@ -81,10 +109,12 @@
     <item>
       <title>关于我</title>
       <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;你们不可能在现在看清未来，只有回首看时才能看清来龙去脉。因此你要相信，已经发生的事情，在你的未来终将连接起来，这就像把散落的珍珠串成项链一样。 —— 乔布斯&lt;/p&gt;
+&lt;p&gt;我们不可能在现在看清未来，只有在未来某天回头看，才能发现来龙去脉。
+因此要相信，已经发生的那些事情，在未来终将串联起来，就像把散落的珍珠串成项链一样。
+—— 乔布斯&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;奶奶家住马路边上，门口正对着一个公交车站。小时候漫长暑假中某个无聊的一天通常是这样度过的：我搬出一个小板凳，坐在门口，好奇地看着路上行色匆匆的人群，他们每五分钟走过一批，永无休止。我注意到人们的相貌，手里的东西，衣着打扮，走路姿态，心里猜想他们各自过着怎样的生活。我可以坐一个下午，直到暮色降临。&lt;/p&gt;
 &lt;p&gt;到了读小学的时候，街对面的邮电局院子里，晚上隔三岔五会放露天电影，黑白片，大部分内容是毛爷爷坐火车，或者洪湖水浪打浪。但是有一次播放的影片讲的是几个带着头盔穿着像桶一样的人，在一片沙地上笨拙地跳来跳去，留下了几个脚印。好多年之后我才回过味来，明白那是关于美国登月的新闻记录片。这又使我想起来，不久之后学校组织大家一起看的一部电影《未来世界》。片中那个面无表情的光头人枪手特别让我害怕。当然，也忘不了好多小孩子晚上挤在一起看电视 - 幼儿园里的仅有的一台彩色电视 - 的愉快时光，《大西洋底来的人》里面的探索号潜艇，是后来我上课走神时常常画在课本边角上的题材。&lt;/p&gt;

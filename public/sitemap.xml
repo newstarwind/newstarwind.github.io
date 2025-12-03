@@ -2,17 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/evolution/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/freedom/3_%E6%99%BA%E5%8A%9B%E7%9A%84%E8%BF%81%E8%B7%83/</loc>
+    <lastmod>2025-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/freedom/2_%E4%BB%8E%E7%8C%BF%E5%88%B0%E4%BA%BA/</loc>
+    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/freedom/1_%E4%B8%8D%E6%9C%BD%E4%B8%8E%E8%87%AA%E7%94%B1/</loc>
+    <lastmod>2025-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/freedom/</loc>
+    <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/evolution/6_%E5%90%8E%E8%AE%B0/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/evolution/5_%E6%BC%94%E5%8C%96%E7%9A%84%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B6%8B%E5%8A%BF/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/worldview/4_%E8%AE%A4%E7%9F%A5%E6%98%AF%E7%89%87%E9%9D%A2%E7%9A%84/</loc>
+    <lastmod>2024-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/evolution/4_%E6%BC%94%E5%8C%96%E7%9A%84%E6%9C%AC%E8%B4%A8/</loc>
     <lastmod>2024-05-30T00:00:00+00:00</lastmod>
@@ -20,14 +29,14 @@
     <loc>http://localhost:1313/evolution/3_%E7%94%9F%E5%91%BD%E7%9A%84%E5%A4%8D%E6%9D%82%E6%80%A7/</loc>
     <lastmod>2024-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/worldview/</loc>
-    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/worldview/3_%E5%AE%87%E5%AE%99%E7%9A%84%E5%88%9B%E9%80%A0%E6%80%A7/</loc>
     <lastmod>2024-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/evolution/2_%E9%80%82%E5%BA%94%E5%BA%A6%E6%99%AF%E8%A7%82/</loc>
     <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/worldview/examples/</loc>
+    <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/evolution/1_%E4%BB%8E%E8%BE%BE%E5%B0%94%E6%96%87%E6%BC%94%E5%8C%96%E8%AE%BA%E8%AF%B4%E8%B5%B7/</loc>
     <lastmod>2024-05-27T00:00:00+00:00</lastmod>
@@ -38,14 +47,23 @@
     <loc>http://localhost:1313/worldview/1_%E5%AE%87%E5%AE%99%E6%98%AF%E5%81%B6%E7%84%B6%E7%9A%84/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/evolution/</loc>
+    <lastmod>2024-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2024-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
+    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/worldview/</loc>
+    <lastmod>2024-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
