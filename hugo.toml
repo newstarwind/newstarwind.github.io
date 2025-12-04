@@ -6,7 +6,7 @@ theme = 'PaperMod'
 [params]
     defaultTheme = "light"                    # light,dark,auto 切换深浅模式
     sectionPagesMenu = 'main'                 # 定义主菜单的名称
-    mainSections = ["evolution", "worldview", "freedom"] # 对应 content/evolution/ 等文件夹名字，可以逐渐添加
+    mainSections = ["evolution","worldview","freedom","mind"] # 对应 content/evolution/ 等文件夹名字，可以逐渐添加
     math = false                              # 默认网站不渲染数学公式，各个页面按需打开
 
 # 配置数学公式支持
@@ -27,7 +27,7 @@ theme = 'PaperMod'
     identifier = "search"
     name = "搜索"
     url = "/search/"
-    weight = 30 # 权重越大，位置越靠后
+    weight = 80 # 权重越大，位置越靠后
 
 [outputs]
     home = ["HTML", "RSS", "JSON"] # 必须加上 JSON
