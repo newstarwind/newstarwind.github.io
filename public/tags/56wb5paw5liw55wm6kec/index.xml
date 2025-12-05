@@ -7,59 +7,5 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>zh-cn</language>
     <atom:link href="http://localhost:1313/tags/56wb5paw5liw55wm6kec/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>神经元与神经网络</title>
-      <link>http://localhost:1313/mind/3_%E7%A5%9E%E7%BB%8F%E5%85%83%E4%B8%8E%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/neuralnetwork/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/mind/3_%E7%A5%9E%E7%BB%8F%E5%85%83%E4%B8%8E%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/neuralnetwork/</guid>
-      <description>&lt;p&gt;大脑中，神经元是最基本的计算单元，神经元传递的是电信号。大脑约有860亿神经元，理解了神经元的运作及其互联，也就知道了大脑运作的底层逻辑。&lt;/p&gt;
-&lt;p&gt;此时，我是以建模的思路来铺陈这些内容的，并非复述生物医学领域对大脑与神经元的发现，而是以为大脑建模为目的，挑选那些对模型最为关键的信息来陈述，而且尽量简化，以求达到信息简要，符合逻辑，能够理解的程度。&lt;/p&gt;
-&lt;p&gt;本节的很多内容来自《得到》中王立铭老师的 “&lt;a href=&#34;https://www.igetget.com/course/%E7%8E%8B%E7%AB%8B%E9%93%AD%C2%B7%E8%84%91%E7%A7%91%E5%AD%A650%E8%AE%B2?param=DkBf54iWfG0&amp;amp;token=D75xge6dAqWVpPasx2VYRzmGO14jPZ&#34;&gt;脑科学五十讲&lt;/a&gt;” 课程。这个系列对于大脑的基本机制的介绍非常简明清晰的，胜过许多专业的书籍。本节图片，除了有标注的之外，都来自该讲义。&lt;/p&gt;
-&lt;h3 id=&#34;轴突与树突&#34;&gt;&lt;strong&gt;轴突与树突&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;西班牙人 &lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E5%9C%A3%E5%9C%B0%E4%BA%9A%E5%93%A5%C2%B7%E6%8B%89%E8%92%99-%E5%8D%A1%E5%93%88%E5%B0%94&#34;&gt;拉蒙·卡哈尔&lt;/a&gt; 开创了对神经元的研究，并因此获得1906年诺贝尔医学奖。他改进了高尔基发明的铬银染色法之后，对动物的神经组织进行了观察，留下了很多精美的手绘图片。根据这些观察，卡哈尔认定神经细胞是一个个独立的结构功能单元，被称为神经元。下图是一幅卡哈尔手绘的神经元图片。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313158206/a400d671-ca9b-4586-8797-b46f51538b74.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313158206/a400d671-ca9b-4586-8797-b46f51538b74.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;神经元拥有一个椭圆的细胞体，细胞体的相反位置会伸出两类不同的枝杈。一根细细的长枝，长度可能是细胞体的几倍乃至几十倍，名字叫 &lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E8%BD%B4%E7%AA%81&#34;&gt;&lt;strong&gt;轴突&lt;/strong&gt;&lt;/a&gt;，以及有一丛细而密的短树枝丛，叫 &lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E6%A0%91%E7%AA%81&#34;&gt;&lt;strong&gt;树突&lt;/strong&gt;&lt;/a&gt;。上图中，中间下部的 a 点上方的很多树枝样汇聚的黑色根节处，就是神经元的细胞体。细胞体上面那密密麻麻的像树枝一样由粗到细分散开来的线条，就是树突。一个神经元的树突可以有一万个左右。a 点所在的细线，就是轴突，它孤零零地延申开去，并没有分叉或者分叉很少。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313204145/babeb900-63b0-4465-94f4-20bb8f43970e.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313204145/babeb900-63b0-4465-94f4-20bb8f43970e.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;上图是卡哈尔的另外一张手绘图，可以看到，字母标识的是神经元的细胞体，其上方树突分散很多，而轴突就像孤零零的根须一样，从细胞体向下方其他地方延申而去。大脑发育的早期，神经元的轴突需要持续生长延长，找到需要连接的另外神经元的树突位置，这对于人类童年的大脑发育非常重要。&lt;/p&gt;
-&lt;p&gt;卡哈尔的一个重要发现是认识到神经元的电信号有明确的传递方向。&lt;strong&gt;它从树突传向细胞体，再从细胞体传到轴突&lt;/strong&gt;。一个神经元用树突衔接其他的神经元的轴突，然后自己的轴突又伸向另外神经元的树突丛。&lt;/p&gt;
-&lt;p&gt;在神经元的轴突末端，信号能够跨越细胞之间的间隙，进入下一个神经元的树突。神经元之间的接触面被称为&lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E7%AA%81%E8%A7%A6&#34;&gt;突触&lt;/a&gt;，突触就像树枝上的小瘤子。我们如果双手握拳，在胸前相对接近。拳头上突起的指骨节就像是突触。重要的是，神经元之间并没有直接接触，而是存在着间隙，这个间隙的宽度在几个纳米到几十个纳米之间。关于它的作用，我们下面再讲。&lt;/p&gt;
-&lt;p&gt;现在我们知道了，神经元的轴突就像电话线，是用来传递电信号的。而它的树突是用来接受其他神经元的信号的。一个神经元可以接受许多个其他神经元的信号，也可以将自己的电信号传递给其他许多个神经元。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313315735/783c8e7e-d96c-4ec9-9f3f-8c91e1c2bef9.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313315735/783c8e7e-d96c-4ec9-9f3f-8c91e1c2bef9.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;一个典型的神经元，图片来自维基百科。&lt;/p&gt;
-&lt;p&gt;轴突就像是神经元上的长长导线。那么，电信号如何在长长的轴突上传递的呢？&lt;/p&gt;
-&lt;p&gt;任何导体都存在电阻，电阻导致电线发热，电流衰减。比如，电信号沿着电话线传递了远距离之后，都会有声音模糊、音量变小、出现杂音等等问题。人体中最长的轴突是从脊柱延伸到手指和脚趾，长度可能超过1米长，长颈鹿体内的轴突甚至会长达5米。它们是如何解决电信号的衰减问题的呢？&lt;/p&gt;
-&lt;p&gt;答案很简单，神经元中的电信号传递并不是像在电线中的电流那样流动，而是更像一列多米诺骨牌顺序倒下。许多块骨牌的顺序倒下，最终形成的连锁反应向前推进，将神经元中的动作电位——也就是电压——向前传递。所以，只要一开始触发了第一张骨牌的倒下，就能保证最后一张骨牌的倒下，其间可以认为没有电位的损耗，而且能够保证传递的电位大小一样。这个机制是由轴突的细胞膜上的离子蛋白与细胞膜内外的电压差配合而完成的，这个机制还保证了，电信号只能沿着轴突从根部到尖端方向传递，而无法反向传递。&lt;/p&gt;
-&lt;p&gt;这样一来，接收端的神经元就能明确地接收到信号发出时的原始强度，无需考虑传输中的衰减。&lt;/p&gt;
-&lt;p&gt;但是，这种多米诺骨牌的传导速度大约只有 1-2米/秒，比我们跑步还慢。在生死攸关的场合，电光石火之间就需要做出反应，这个速度肯定不够快，怎么办？&lt;/p&gt;
-&lt;p&gt;在演化中，脊椎动物采取的办法是加上绝缘层，防止轴突的细胞膜漏电。脊椎动物的神经元轴突上紧密地缠绕上被称为 &lt;a href=&#34;https://zh.wikipedia.org/wiki/%E9%AB%93%E7%A3%B7%E8%84%82&#34;&gt;&lt;strong&gt;髓鞘&lt;/strong&gt;&lt;/a&gt; 的绝缘体，一圈圈紧密包裹在轴突外面，就像电线外面的塑料外皮一样。漏电少了，单次动作电位的跨度可以变得更长。这样，电信号的速度提高到超过 100米/秒 。&lt;/p&gt;
-&lt;p&gt;但是，也因为这样，我们的大脑成为了能耗最大的器官。&lt;/p&gt;
-&lt;p&gt;动作电位沿着轴突传导的过程本身是不太耗能的，能量耗在维持神经元细胞膜内外的电压差上。平时，神经元会利用叫做钠-钾离子泵的蛋白质分子，像水泵一样，不断地把钠离子从含量已经很低的细胞内持续抽向细胞外，把钾离子从含量已经很低的细胞外运往细胞内，从而维持细胞膜内外的电位差。这个过程就像空调在大热天里将热量从室内不太热的空气传递给室外已经很热的空气中一样，很耗电。&lt;/p&gt;
-&lt;p&gt;据推算，单单这个离子泵，就消耗了神经元 75% 的总能量！所以人脑只占身体重量的 2%，却消耗了全身 20% 的能量。&lt;/p&gt;
-&lt;p&gt;也是因为这个原因，我们的大脑容易感觉到疲倦，容易失去注意力，需要不时补充葡萄糖，我们于是嗜好甜食。&lt;/p&gt;
-&lt;h3 id=&#34;突触与神经编码&#34;&gt;&lt;strong&gt;突触与神经编码&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;如果将神经元想象为一只小小的八爪鱼，则很多这样的八爪鱼通过将它们的触手互相连接，就构成了一张网。那么，那些触手互相接触的地方，也就是突触，成为了网络上的节点，突触其实是树突和轴突之外最重要的信息处理节点。&lt;/p&gt;
-&lt;p&gt;突触有两种信息处理方式。&lt;/p&gt;
-&lt;p&gt;一种是&lt;strong&gt;硬连接&lt;/strong&gt;。两个神经元的突触靠得非常近，间隙大约只有2-4纳米，二者突触表面上存在大量的孔道，允许两侧的带电离子自由流动，因此动作电位可以毫无障碍地跨越这个间隙一路向前。硬连接只发生在极少数场合，它的好处是信号传递速度极快，但是它缺乏可塑性。硬连接用于人们与生俱来的，或者在婴幼儿期经过塑造与强化的那些本能反应。&lt;/p&gt;
-&lt;p&gt;一种是&lt;strong&gt;软连接&lt;/strong&gt;，以化学信号为媒介来完成信号交接的。简单来说，从轴突突触经过20-30纳米的间隙，再到树突突触的这三个环节上，出现了“电-化学-电”的信号转换。当动作电位抵达突触一侧的轴突突触的时候，电信号会触发化学物质的释放。当这些化学物质自由扩散、穿过间隙、到达另一侧的树突突触的时候，又能触发新的神经电活动。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313449902/e3cddf32-3895-4a5e-890f-de1133801074.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313449902/e3cddf32-3895-4a5e-890f-de1133801074.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;树突与轴突之间的突触及其间隙，图片来自维基百科。&lt;/p&gt;
-&lt;p&gt;这些作为中介的化学物质叫 &lt;a href=&#34;https://zh.wikipedia.org/wiki/%E7%A5%9E%E7%BB%8F%E9%80%92%E8%B4%A8&#34;&gt;&lt;strong&gt;神经递质&lt;/strong&gt;&lt;/a&gt;。目前已经发现的神经递质有上百种，其中一些已经广为人知，甚至成了流行文化的标签，例如多巴胺、血清素、肾上腺素等等。&lt;/p&gt;
-&lt;p&gt;神经递质触发间隙对面突触的过程，有点像钥匙开锁。对面的突触表面存在很多不同种类的蛋白质受体，每一种受体只会和对应的一种神经递质结合，这就像门锁与钥匙一样。钥匙插进锁孔就可以开启突触表面的离子通道，让游离在间隙中的带电离子能够进入对面的突触内部。这样一来，化学信号又重新变成了电信号。&lt;/p&gt;
-&lt;p&gt;注意，一次开锁只能将离子通道打开一小会儿，之后离子通道又会自动关闭。所以，上一个神经元的轴突末端的单次电位的起伏还不足以触发下一个神经元的内部电位改变。但如果短时间内，上一个神经元中发生了多次电位的传递，形成了一个持续的电波，这会导致又有很多神经递质分子不断释放，通过间隙，打开了下一个神经元树突突触表面的更多受体，不断有带电离子流进下一个神经元的树突突触内，那么，在后者内部的带电离子会越积累越多，直至足以产生电位变化。&lt;/p&gt;
-&lt;p&gt;这是一个量变引起质变的过程，可以比作信息处理中的&lt;strong&gt;模数转换&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;我们可以想象，一个天平的两臂，左边放的是六十克的重物，右边是空的。开始时右边没有砝码，重物压下了天平左臂。然后，我们按照固定的节奏不断地右臂添加固定质量的砝码，比如每一秒钟放一枚壹克重的砝码。一分钟后，天平终于平衡了，这相当于一个60赫兹的波幅为一克的波导致了天平的状态改变。&lt;/p&gt;
-&lt;p&gt;所以，神经元网络中电位的传递，是电波的传递而不是单次电位的传递，这很重要。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313670481/5017c35c-17bc-4548-b426-0e790876b936.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313670481/5017c35c-17bc-4548-b426-0e790876b936.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;两个神经元及其树突，树突以绿色标记，图片来自维基百科。&lt;/p&gt;
-&lt;p&gt;在这里，我们可以接触到 &lt;a href=&#34;https://zh.wikipedia.org/zh-cn/%E7%A5%9E%E7%BB%8F%E7%BC%96%E7%A0%81&#34;&gt;&lt;strong&gt;神经编码&lt;/strong&gt;&lt;/a&gt; 这个神秘概念了。神经元中一次电位的改变可以快到一个毫秒内发生，前后多次的电位的频繁变化就形成了电波。电波有频率和波幅等等属性，还有像电报一样的滴滴哒滴哒或者嘀嘀嘀哒哒的这样的不同组合方式，这些都构成了神经编码的基本要素。通过这些要素，神经电波就可以承载信息了，这就像电话线传递的也是电波一样。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313712703/e8e769e9-c932-4326-ba55-1ca324084176.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313712703/e8e769e9-c932-4326-ba55-1ca324084176.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;一个神经元的电位改变，横轴为时间，纵轴为电位值，图片来自维基百科。&lt;/p&gt;
-&lt;p&gt;在信息领域，将信息编码进电磁波的过程，被称为编码或者调制，有很多种编码方式。在神经科学中，关于神经元是如何编码和解码的，尚无定论。&lt;/p&gt;
-&lt;p&gt;动作电位所包含的信息可能来自不同的编码方案。例如，受神经驱动的肌肉细胞的收缩，就单纯取决于神经电波的频率，也就是单位时间内的动作电位产生的数量，称为频率编码。与之相反，复杂的时间编码则是基于波峰与波谷的先后组合，它们可能会与外界某种刺激绑定，例如视觉与听觉，或者用在激发其他的神经元上。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;频率编码&lt;/strong&gt;，就是刺激越强烈，神经电波的频率越高。&lt;strong&gt;时间编码&lt;/strong&gt;，就是像电报用的摩尔斯电码那样的字典式编码。&lt;/p&gt;
-&lt;p&gt;![](&lt;a href=&#34;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313784147/bafb2ace-7250-4b72-8a1a-20a766b3ea73.png&#34;&gt;https://cdn.hashnode.com/res/hashnode/image/upload/v1748313784147/bafb2ace-7250-4b72-8a1a-20a766b3ea73.png&lt;/a&gt; align=&amp;ldquo;center&amp;rdquo;)&lt;/p&gt;
-&lt;p&gt;摩尔斯电码编码规则，图片来自维基百科。&lt;/p&gt;
-&lt;p&gt;神经元使用的是频率编码还是时间编码，仍然存在争议，但是时间编码似乎越来越占优势。&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="light">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>记忆与重构 | 祁观</title>
+<meta name="keywords" content="">
+<meta name="description" content="探索记忆的特征与重构，理解信息存储、神经编码和大脑中神经网络构建的复杂性与鲜活性。">
+<meta name="author" content="祁新">
+<link rel="canonical" href="http://localhost:1313/mind/4_%E8%AE%B0%E5%BF%86%E4%B8%8E%E9%87%8D%E6%9E%84/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.343cc480b9ffc8f04ccbe5e968ad674880cab773ec19905e93033065c1e7a804.css" integrity="sha256-NDzEgLn/yPBMy&#43;XpaK1nSIDKt3PsGZBekwMwZcHnqAQ=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/mind/4_%E8%AE%B0%E5%BF%86%E4%B8%8E%E9%87%8D%E6%9E%84/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    }
+
+</script>
+    
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath:  [['\\(', '\\)'], ['$', '$']]     
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+    
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="祁观 (Alt + H)">祁观</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/worldview/" title="世界观">
+                    <span>世界观</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/evolution/" title="变化与选择">
+                    <span>变化与选择</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/freedom/" title="不朽与自由">
+                    <span>不朽与自由</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/mind/" title="心智模型">
+                    <span>心智模型</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于我">
+                    <span>关于我</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      记忆与重构
+    </h1>
+    <div class="post-meta"><span title='2025-06-01 00:00:00 +0000 UTC'>June 1, 2025</span>&nbsp;·&nbsp;<span>祁新</span>
+
+</div>
+  </header> 
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/images/cover/%E9%87%8D%E6%9E%84.jpg" alt="封面图片">
+        
+</figure><div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e8%ae%b0%e5%bf%86%e7%9a%84%e6%9e%84%e6%88%90" aria-label="记忆的构成">记忆的构成</a></li>
+                <li>
+                    <a href="#%e8%ae%b0%e5%bf%86%e5%88%86%e7%b1%bb" aria-label="记忆分类">记忆分类</a></li>
+                <li>
+                    <a href="#%e5%bf%92%e4%bf%ae%e6%96%af%e4%b9%8b%e8%88%b9" aria-label="忒修斯之船">忒修斯之船</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>在上节探讨了人脑中信息的特征判定与编码过程之后，我们得以理解：</p>
+<div style="background-color: #F0F8FF; color: #000000; padding: 15px; border-radius: 8px; border: 2px solid #000000;">
+    人脑中传递的信号，并非像摄影机拍摄视频那样是所见所闻的完整复制，而是对环境信息的采样，是这些信息的 <strong>特征及其关联</strong>。
+  </div>
+<br>
+<p>顺着这个思路推演。记忆，无论是情景记忆还是语义记忆，它的本质都是对信息的特征及其相关性的保存与检索。记忆以事物的特征作为主要内容，也就是说，<strong>我们记忆的是事物的特征及其关联，而非完整信息</strong>。</p>
+<p>例如, “首都北京” 是将 “首都” 与 “北京” 这两个特征联系起来。看到 “北京” 这个词，我们不仅想到了北京这个城市，还有天安门、故宫、长城、北大清华、升旗仪式等等相关事物，它们都是北京的特征。我们对北京的相关特征知道得越多，我们对于北京的记忆就越鲜活，越难以忘怀。但是，我们永远也不会在头脑中完整复现出北京的每一处街道或者建筑，而是根据自己的兴趣在北京的各个特征之间跳跃，检索其信息，从这里想到了那里。</p>
+<h2 id="记忆的构成">记忆的构成<a hidden class="anchor" aria-hidden="true" href="#记忆的构成">#</a></h2>
+<p>现在，让我们回到小明这里来。</p>
+<p>小明几天后在另一条路上走的时候，又看到了一只猫。这只猫碰巧也是黄白相间的皮毛颜色。此时，小明大脑中的相关特征的判定神经元又被激活了，它们产生的电波同样传递到了海马体。“黄白相间” 以及 “猫” 这两个特征，它们的神经编码都是固定的。海马体进行编码后，像查询数据库一样，在大脑中搜索相同或类似编码。如果有所发现，它会激活那些编码对应的神经簇，这样，小明的脑海里就会浮现出前几天在小区里看到母猫由由的事情来。</p>
+<p>在回忆时，海马体如何根据已知的神经编码激活对应的神经元呢？这仍然是一个谜题，我有一个大胆的猜想，就是神经编码的 <a href="https://zh.wikipedia.org/wiki/%E5%8F%AF%E9%80%86%E8%A8%88%E7%AE%97"><strong>可逆计算</strong></a>。</p>
+<p>前面提到，事件发生时所有特征，包括时间、空间、事物特征，甚至当时的情绪反应等等，一起激活了许多神经元，它们共同产生了一个电位序列。该序列是它们各自的时间编码与空间编码的叠加而成的，具有相当程度的唯一性，海马体记录了该编码。</p>
+<p>基于此前提，我假设在某种机制的作用下，当海马体从记录中取出该编码后，重新输入到神经网络中，它会重新激活产生这个编码的那些神经元。这个过程就好比，我们有一个字符串 “124”，它本来是 ABD 三个神经元激活后产生的编码，然后我们将它重新输入到整个神经网络中，它就会自动激活 ABD 三个神经元一样。从神经元与特征的对应关系上看，这个假设是合理的。</p>
+<p>这就能够解释，为什么记忆的存储广泛分布于大脑皮层各处。这是因为，与某事物相关联的神经元分布在皮层各处，它们在代表该事物的神经编码输入后都会被激活。</p>
+<p>而且，<strong>体验新鲜事情与回忆往事，实际上是一回事</strong>。它们都是在大脑中产生同一套神经编码，然后激活同一组神经元。差别在于，体验新鲜事情是首次激活相关一组神经元，然后产生这套神经编码。回忆是事后再用该套神经编码重新激活该组神经元。做梦的时候，我们为什么感到身临其境，甚至在梦中惊醒？做梦就是<strong>真的</strong>在体验这些事件，因为在人脑中处理的都是同一套神经编码，激活了同一组神经元。</p>
+<p>如果医生切除了病人的某个脑区，实际上并不影响全部记忆，而是只影响记忆的某些细节，这些细节的特征判定神经元因为切除而丢失了。但是，人脑会用想象力补上这些细节，我们自己是察觉不到的。</p>
+<p><strong>记忆存在于整个神经元网络中，而不是某单个神经元中</strong>。</p>
+<p>一只老鼠学习了穿过迷宫的路线，如果这些信息存储在一个点状区域，那么，通过损伤老鼠大脑的该处就能够破坏这些记忆。实验者在迷宫中训练了20只老鼠，然后，移除了老鼠大脑皮层中的不同区域，给它们一些时间恢复，之后再让这些老鼠走迷宫。实验者发现，一只老鼠的知识不能被定位于皮层的某单一区域。广泛的脑组织切除会导致严重的记忆缺陷，但所有老鼠却也都还保有一部分能力。</p>
+<p>后来进一步的实验表明，记忆的非定位结论是正确。大脑中没有专门的记忆器官，信息根本不是存储在特定文件柜中，而是广泛分布在神经元网络中。也就是说，<strong>特征判定神经元广泛分布在神经网络中，它们与神经编码的对应关系，就是记忆</strong>。如果损失了一部分神经元，只是损失了对这部分特征的记忆。</p>
+<p>实际上，随着时间流逝，我们往后的每一次回忆，往往会缺失更多的信息。多年之后，只有事件的最主要特征，才能被我们回忆起来。记忆本来就是一个信息的压缩过程，它会随着时间而磨损。</p>
+<p>可逆计算假说的另一个佐证是 <a href="https://zh.wikipedia.org/wiki/%E7%A5%96%E6%AF%8D%E7%BB%86%E8%83%9E">祖母细胞假说</a>。神经学家杰罗姆·莱特文认为，当你失去负责对祖母编码的神经元时，可能就认不出祖母来了。大脑中有些神经元会对比尔·克林顿或某名人的照片做出反应，却对其他人的照片没有反应。这说明某个具体显著的特征确实可以激活某特定的神经元。在回忆或者联想时，它们会被再次激活。</p>
+<p>当然，这并非是说只有一个神经元专门负责识别祖母。根据前面的论述，神经网络中会进行对于事物的稀疏编码。一个事物，会由多个相关神经元进行判定，它们是所有神经元中非常少的一部分。祖母作为一个概念，其本身是一系列特征的打包组合，祖母概念的判定当然会使用多个神经元。</p>
+<p>让我们进一步在数学上阐述此问题。在前面讲述的联结主义的模型中，神经网络的状态可以表示为一个 $N * M$ 矩阵， $N$ 表示隐藏层的层数， $M$ 表示每一层的节点数，该矩阵表明整个神经网路中的许多神经元的激活程度，是整个神经网络的某一 <strong>状态</strong>，该状态下许多神经元节点激活了，这表明神经网络中的许多特征得以判定，这些特征值在一起就构成了记忆的实际内容。</p>
+<p>记忆的本质是事物的特征值的存储与检索。可逆计算假说就是指，通过该矩阵可以反向找到这些神经元并激活之。</p>
+<p><strong>经由神经编码的重新输入，让神经网路回到某一状态</strong>。</p>
+<p>可逆计算假说是一个大胆猜测，希望能被新的科学实验证实或者证伪。</p>
+<h2 id="记忆分类">记忆分类<a hidden class="anchor" aria-hidden="true" href="#记忆分类">#</a></h2>
+<p>按照记忆的持续时间长短，可以进一步分类为感觉记忆、工作记忆和长期记忆。</p>
+<p>在日常经历中，大脑会接受五种感官的输入——视觉、听觉、味觉、触觉和嗅觉，这些感受会形成片刻的信息残留，称之 <strong>感觉记忆</strong>，此时它们尚未被编码，没有被存储，持续时间不到一秒。如果它引发了我们的注意力——也就是进入了我们的意识后，这些感受就会转移到工作记忆中。反之，则这些感觉记忆就会烟消云散。当我们走在街上，看到的日常街景，看到的寻常的不相关的行人车辆建筑物，它们留在我们头脑中的片刻的形象，就属于感觉记忆。</p>
+<p>至于什么是意识，这是关乎理性的根本问题，我们以后再讲。</p>
+<p>进入了意识的信息会被存储起来成为 <strong>工作记忆</strong>，工作记忆主要用于我们思考时的上下文处理。除非这些信息与已有的知识有联系，否则它只会持续不到20秒，用完即弃。如果其与已有知识建立了联系，这些信息就会转入长期记忆。工作记忆的容量非常有限，实验表明，它的存储容量大约是 7-9 位数字那么多。</p>
+<p><strong>长期记忆</strong>中的信息以特征及其关联的方式组织起来，体现为以稀疏编码实现的<strong>神经编码</strong>。长期记忆容量很大，可以容纳多得多的信息。海马体负责将工作记忆转化为长期记忆，它就像一个搜索门户网站，把各种类型的短期信息整合后，加入时间戳、位置戳、情绪戳等等，然后进行编码和存储。它通过特定编码唤醒相关记忆的检索能力，则有赖于我前面假设的可逆计算机制。</p>
+<p>信息是对客观事物的采样，信息本身不代表全部的真实。因此，大脑不仅检索信息，还会将这些信息拼凑起来，试图重建当时的情景，使之生动可信。例如，小明会想起母猫由由，还会想起当时的晴朗天气，甚至空气中弥漫的花香，以及自己为什么走在那条小径上等等。重构情景的能力，是大脑的更高级认知功能。</p>
+<p>此后，如果小明多次遇到由由，根据赫布法则，每次相遇都会强化相关的神经突触连接，使得下次回忆更加容易和清晰，这使得小明对由由的记忆变得更深刻。</p>
+<p>我们再举个简单的例子。当学习一个新单词时，我们会首先理解该单词的含义，一个单词的含义，实际上就是与之相关的许多特征的集合，而这些特征都会激活大脑中的各自判定神经元，激活后的神经元所产生的电波就会触发海马体的编码与记录过程。</p>
+<p>假设你在学习 “猫” 这个单字，这一学习过程会涉及到以下步骤：</p>
+<ul>
+<li>识别：我看到了一幅猫的图片，老师在黑板上写下“猫”这个字，同时听到了老师发出的“mao”的读音，以及老师对猫的解释，我的大脑将 “猫” 的含义进行了特征判定，包括其读音、字形、猫的外形、叫声和习性等等。</li>
+<li>编码：视觉皮层或听觉皮层中的特征判定神经元开始激活产生电波，之后海马体形成初步的神经编码并存储。</li>
+<li>回忆：当我再次看到 “猫” 这个字时，它的字形激发了相关神经元，神经元的电波传递到海马体，海马体编码并查询，发现了一堆与之相关的其他特征，接着这些特征的相关神经元被激活，我就想起了猫的各项特征。</li>
+<li>巩固：我多次看到听到 “猫” 这个字，相关神经元之间的突触连接逐渐增强，“猫”的神经编码趋于稳定。</li>
+</ul>
+<p>多个大脑区域参与了这项工作。对于 “猫” 这个字的记忆，视觉皮层通过人眼看到看到猫的视觉信号，来解析猫的视觉特征。听觉皮层则通过 “猫” 这个词的语音或是猫的叫声，解析其声音特征。海马体作为记忆中枢，将这些感觉信息整合为神经编码，并逐渐转化为长期记忆。前额叶皮层在我需要用 “猫” 这个词时，触发记忆提取和认知更新。</p>
+<p>记忆的诀窍是，它越能激活更多的神经元，则越容易被我们记住。</p>
+<p>比如我们背英语单词。有个单词 $sentimental$ ，这个词比较长有 11 个字母，字母顺序当然是其特征，我们可以用这些来记忆这个单词，但是效率不高。我们还可以将之分为几个音节来记忆， $sen$ $ti$ $men$ $tal$ ，一共四个音节，音节也是常用的特征，这样记忆会容易很多。然后我们发现这四个音节的中文谐音是 “三屉馒头”，我们头脑中马上浮现了刚刚蒸好的三大蒸笼热气腾腾的大馒头，吃不完好发愁啊，而发愁正是这个英文词的本意，这样记忆简直太容易了。此时如果将发愁的那个人赋予某个熟人的面孔，有了声香味色，会效果更好。</p>
+<p>这样，有了这么多的特征，我们就很容易学会了 $sentimental$ 这个词汇。</p>
+<p>睡眠与记忆也有关系。</p>
+<p>一项研究显示，睡眠中大脑的活动反映了前一天的经历，因此，新的记忆可能通过这种复述得以巩固。所以，当你不能得到足够睡眠时，学习与记忆效率就会降低。</p>
+<h2 id="忒修斯之船"><strong>忒修斯之船</strong><a hidden class="anchor" aria-hidden="true" href="#忒修斯之船">#</a></h2>
+<p>每 4 个月红细胞就彻底更替一遍，皮肤细胞每几个星期就换一轮。在 7 年左右的时间里，身体里的每一个原子就会彻底由其他原子取代，包括全身骨骼。一生中，你的身体实际上已经完全更新了好多次。</p>
+<p>想象一下，你走进一个房间，与不同年龄的自己相会。房间里有上学前稚嫩的你、少年勃发的你、青春浪漫的你、壮年有为的你、垂老暮年的你，以及目前的你。你们坐在一起，分享故事，梳理出决定你是你的那条线索，但是你们真的能做到吗？你们的确有着相同的名字，相同的身份证号码。但是，你们有完全不同的物质身躯，你们有着可以各自思考的大脑。交谈中你甚至可能发现，你与不同年龄的自己，实际上有着不同的价值观，你们对同一件事情的看法也往往不一样。</p>
+<p>这时候，<strong>是什么维系着你是你呢</strong>？</p>
+<p>如果这几个你之间，没有前后接续的记忆，没有共同的回忆，你们还是一个人吗？</p>
+<p>时光荏苒，物是人非，你的经历会积累，性格会改变，价值观会偏移。但是，只要保有一份有始有终的连续记忆，你大约还是可以认为，这几个人是在一个连续的生命历程中的不同阶段的你，他们不是陌生人。</p>
+<p>时间在如潮水一般不断地冲刷着我们，记忆却保留了下来，让我们维持着一个完整历程的感觉。从而，在物质意义之外，记忆保持了我们的信息一贯性，它就是我们内在自我的最终依托。</p>
+<p>但是，记忆并非完全可靠。</p>
+<p>比如，你在餐厅里过一次难忘的生日。这个晚上经历的事情，包括家人的祝福，美味的蛋糕，大家的欢声笑语，抑或服务员不小心摔碎一个盘子等等，这些事情触发了大脑的一系列神经元的激活。在神经网络里，所有这些激活过的神经元彼此连接。它们的激活与连接，代表了当时你大脑的一个状态，这个状态被保留下来，成为记忆。之后，当你再次回忆时，这些神经元就会一同启动，于是，你又回到了当时的状态，有了与当时相同的体验。</p>
+<p>几个月以后，你偶然吃到了一块蛋糕，味道就跟你在那次生日聚会上吃到的一样。这把钥匙，能够重新激活那片网络，那些神经元都活跃了起来，就像几片街区的灯都亮了。突然之间，你回到了那段记忆里。</p>
+<p>但是，如果深究细节，你会意识到，除了蛋糕、谈话等等之外，你似乎不记得其他人的情况，尽管当时高朋满座。</p>
+<p>不仅如此，你对生日聚会的记忆逐渐褪色了。为什么？</p>
+<p>因为，你的神经元总数是有限的，它们需要被不断重复利用，在不同时间参与不同的神经活动。神经元作为神经网络中的节点，不断地构建连接和调整阈值。随着这些 “生日” 神经元逐渐参与到其他事物里，生日聚会的记忆就逐渐模糊起来。</p>
+<p>因此，<strong>记忆的敌人不是时间，而是更新的记忆</strong>。</p>
+<p>之后，你的记忆就更是值得怀疑了。</p>
+<p>那次生日聚会之后的某一年，你的两位老同学组建的家庭破裂了。但是，你始终想不起来，当时两人在该次生日聚会上相处的情形，这完全是空白。由于这片空白的存在以及这两位老同学现在的处境，你会情不自禁地用现在涂改过去，认定当时二人就关系不好。“在那次聚会上，他们两人之间就无话可说”，你会回忆说。</p>
+<p>因此，对同一件事的记忆，在你人生的不同阶段很可能有很大差异。</p>
+<p>实际上，你在编织记忆，为它点缀细节，添油加醋，使之符合当下的情形。</p>
+<blockquote>
+<p>在苏珊年纪还小时，母亲在游泳池溺水身亡了。多年以后的一次聚会上，她的亲戚告诉她一件出人意料的事实：是苏珊在泳池里发现了母亲的尸体。这个消息把苏珊吓坏了，她根本不知道，事实上也根本不相信。但是她说道：“那次聚会之后，我就开始想，说不定真是这样。我开始寻思其他我还记得的事情：比如消防员来了，给了我氧气。或许我需要氧气，是因为我发现尸体后太受冲击？” 没过多久，她脑海中就浮现出母亲在游泳池里的情形了。</p>
+<p>又过了一阵，亲戚给苏珊打电话，说是自己记错了。发现尸体的并不是她而是她的姑姑。于是，苏珊拥有了一段属于自己的虚假记忆，细节丰富且印象深刻。</p>
+<p>——《大脑的故事》</p>
+</blockquote>
+<p>记忆并非一段段真实的记录。相反，它是一次次重构，有时几乎是编故事。</p>
+
+
+  </div>
+
+
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+
+    
+
+
+        
+      <nav class="paginav">
+            
+      
+      
+      
+      <a class="prev" href="http://localhost:1313/mind/3_%E7%89%B9%E5%BE%81%E4%B8%8E%E7%BC%96%E7%A0%81/">
+        <span class="title">« 上一篇</span>
+        <span>特征与编码</span>
+      </a>
+      
+
+      
+      
+      <a class="next" href="http://localhost:1313/mind/5_%E8%B4%A8%E6%84%9F/">
+        <span class="title">下一篇 »</span>
+        <span>质感</span>
+      </a>
+      
+      
+
+    </nav>    
+    
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">祁观</a></span>
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
