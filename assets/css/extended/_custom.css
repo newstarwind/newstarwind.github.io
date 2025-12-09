@@ -1,0 +1,28 @@
+/* 1. 定义 @font-face 规则 */
+@font-face {
+    /* 字体名称：你可以用你喜欢的任何名字 */
+    font-family: 'LXGW WenKai Lite Subset'; 
+    
+    /* 指向你放在 static/fonts/ 目录下的文件 */
+    src: url('/fonts/lxgw-subset.woff2') format('woff2'); 
+    
+    /* 字体特性（根据你的需要） */
+    font-weight: 500; /* Medium 对应 500 */
+    font-style: normal;
+    
+    /* 关键优化：字体未加载时，先显示系统字体，不留白 */
+    font-display: swap; 
+}
+
+/* 2. 将字体应用到页面元素 */
+body {
+    /* 所有的正文内容都使用你定义的字体 */
+    font-family: 'LXGW WenKai Lite Subset', 
+                  'PingFang SC',   /* macOS/iOS 默认中文字体 */
+                  'Hiragino Sans GB', /* Windows 早期 macOS/iOS 字体 */
+                  'Microsoft YaHei', /* Windows 默认中文字体 */
+                  'Noto Sans CJK SC', /* Android/Linux 字体 */
+                  sans-serif;      /* 通用无衬线字体作为回退 */
+    /* 你也可以单独设置标题、代码块等的字体 */
+    /* h1, h2, h3, h4, h5, h6 { font-family: ... } */
+}
