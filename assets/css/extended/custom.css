@@ -1,81 +1,54 @@
+/* Fira Code 字体定义 ，这一部分必须放在 CSS 文件的最顶部，以便浏览器在渲染前加载字体。*/
 @font-face {
-    /* 字体名称：你可以用你喜欢的任何名字 */
-    font-family: 'LXGW WenKai Lite Subset';
+    font-family: 'Fira Code';
 
-    /* 指向你放在 static/fonts/ 目录下的文件 */
-    src: url('/fonts/lxgw-subset.woff2') format('woff2');
-
-    /* 字体特性（根据你的需要） */
-    font-weight: 500;
-    /* Medium 对应 500 */
+    /* 替换为你实际的字体文件路径！建议使用 WOFF2 格式，因为它压缩率高且兼容性好。*/
+    src: url('fonts/FiraCode-Regular.ttf') format('truetype');
+    /* * 定义字重（通常 Fira Code 只有 Regular/400）*/
+    font-weight: 400;
     font-style: normal;
-
-    /* 关键优化：字体未加载时，先显示系统字体，不留白 */
+    /*可选：定义字体显示策略，确保在加载时平滑过渡*/
     font-display: swap;
 }
 
-
-/* 2. 将字体应用到页面元素 */
-
+/* 将字体应用到页面元素 */
 body {
     /* 所有的正文内容都使用你定义的字体 */
-    font-family: 'LXGW WenKai Lite Subset',
-        'PingFang SC',
-        /* macOS/iOS 默认中文字体 */
-        'Hiragino Sans GB',
-        /* Windows 早期 macOS/iOS 字体 */
+    font-family:
+        /* Fira Code 必须在最前面！确保英文/数字/符号优先使用它。 */
+        'Fira Code',
+        /* 微软雅黑（专用于中文字符） */
         'Microsoft YaHei',
-        /* Windows 默认中文字体 */
+        /* 苹方-简 (macOS/iOS 备选) */
+        'PingFang SC',
+        'Hiragino Sans GB',
         'Noto Sans CJK SC',
-        /* Android/Linux 字体 */
         sans-serif;
-    /* 通用无衬线字体作为回退 */
-    
+}
 
-    /*
-    * --- 3. 标题 (H1, H2, H3) 样式设置 ---
-    * * 这一部分专门设置标题的字体，实现正文和标题字体的分离。
-    */
 
-    h1,
-    h2,
-    h3 {
-     /*
-     * 字体栈优先级 (确保微软雅黑优先)：
-     * 1. "Microsoft YaHei" (微软雅黑, Windows 优先)
-     * 2. "PingFang SC" (苹方-简, macOS 备选)
-     * 3. sans-serif (最终非衬线备选)
-     */
-        font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+/* ... 其他样式（h1, pre, code 等）保持不变 ... */
 
-        /* 标题通常使用较粗的字重 */
-        font-weight: 600;
-        /* 或 'bold' */
+h1,
+h2,
+h3 {
+    font-family:
+        'Fira Code',
+        "Microsoft YaHei",
+        "PingFang SC",
+        sans-serif;
+    font-weight: 600;
+    color: #3d3d3d;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
 
-        /* 设置标题颜色，通常比正文略深或使用品牌色 */
-        color: #3d3d3d;
-
-        /* 确保标题之间有足够的上下边距 */
-        margin-top: 1.5em;
-        margin-bottom: 0.5em;
-    }
-
-    /* 可以对更小的标题使用正文的字体或轻量级的样式 */
-    h4,
-    h5,
-    h6 {
-        font-family: inherit;
-        /* 继承 body 的字体 */
-        font-weight: 500;
-    }
-
-    pre,
-    code {
-        /* 代码块和行内代码可以使用等宽字体，提高可读性 */
-        font-family: 'Courier New', monospace;
-        background-color: #f4f4f4;
-        padding: 2px 4px;
-        border-radius: 4px;
-    }
-
+pre,
+code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-feature-settings: "liga" 1, "calt" 1;
+    font-variant-ligatures: contextual, common-ligatures;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
